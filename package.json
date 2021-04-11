@@ -12,7 +12,8 @@
     "build:11ty": "eleventy --build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:rollup": "rollup -c rollup.config.js",
-    "watch:rollup": "rollup -c rollup.config.js --watch"
+    "watch:rollup": "rollup -c rollup.config.js --watch",
+    "scrape:locations": "node scraper/scrape-locations.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
   },
   "dependencies": {
     "alpinejs": "^2.8.2",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "scrape-it": "^5.3.1"
   }
 }
