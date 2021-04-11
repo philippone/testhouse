@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-location
+---
+<main>
+    {% block content %}
+
+    <h1>{{ location.name }}</h1>
+
+    {{ location.postal}}
+    {{ location.street}}
+    {{ location.number}}
+
+    {% endblock content %}
+</main>

@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Viktoria-Apotheke",
+    "tel": "0681/36148",
+    "street": "Bahnofstraße",
+    "number": "95+97",
+    "city": "Saarbrücken",
+    "postal": "66111",
+    "tag": ["pharmacy"]
+  },
+  {
+    "name": "Apotheke im Medizeum",
+    "tel": "0681-883985-0",
+    "street": "Europaallee",
+    "number": "15",
+    "city": "Saarbrücken",
+    "postal": "66113"
+  },
+  {
+    "name": "Stengel-Apotheke",
+    "tel": "0681/52363",
+    "street": "Eisenbahnstr.",
+    "number": "25",
+    "city": "Saarbrücken",
+    "postal": "66117"
+  },
+  {
+    "name": "Kramer'sche Apotheke",
+    "tel": "0681-851159",
+    "street": "Saargemünder Str.",
+    "number": "125",
+    "city": "Saarbrücken",
+    "postal": "66119"
+  },
+  {
+    "name": "Test Doc",
+    "tel": "0681-851159",
+    "street": "Saargemünder Str.",
+    "number": "125",
+    "city": "Saarbrücken",
+    "postal": "66119",
+    "tag": ["doctor"]
+  },
+  {
+    "name": "Test Test Center",
+    "tel": "0681-851159",
+    "street": "Saargemünder Str.",
+    "number": "125",
+    "city": "Saarbrücken",
+    "postal": "66119",
+    "tag": ["test-center"]
+  }
+]

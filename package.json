@@ -1,0 +1,43 @@
+{
+  "name": "testhouse",
+  "version": "1.0.0",
+  "description": "MVP of POC-test location search",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf _site",
+    "build": "npm-run-all clean build:rollup build:11ty",
+    "dev": "NODE_ENV=dev npm-run-all clean -p watch:* -- --watch",
+    "serve:11ty": "eleventy --serve",
+    "watch:11ty": "eleventy --watch",
+    "build:11ty": "eleventy --build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:rollup": "rollup -c rollup.config.js",
+    "watch:rollup": "rollup -c rollup.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philippone/testhouse.git"
+  },
+  "author": "Philipp Schardt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philippone/testhouse/issues"
+  },
+  "homepage": "https://github.com/philippone/testhouse#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2",
+    "rollup": "2.45.1",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "typescript": "4.2.4"
+  },
+  "dependencies": {
+    "alpinejs": "^2.8.2",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}

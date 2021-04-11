@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-locations
+---
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+{{ content | safe }}
+<div x-data="form()">
+
+<form  x-on:submit="onSearch($event)">
+
+    <label>
+    Postal:
+    <input required="true" name="postal" x-model="postal" value="66117" placeholder="66117" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$"/>
+    </label>
+    <button type="submit" id="submitBtn">Search</button>
+</form>
+
+
+<!--<ul>-->
+<!--{%- for location in locations -%}-->
+<!--<li>-->
+<!--    <a href="/location/{{ location.name | slug }}">{{ location.name }}</a>-->
+<!--</li>-->
+<!--{%- endfor -%}-->
+<!--</ul>-->
+
+<ul class="location-list">
+    <template x-for="item in locations" :key="item">
+        <li>
+            <a x-bind:href="'/location/' + item.name" x-text="item.name"></a>
+        </li>
+</template>
+</ul>
+</div>
+{% endblock %}
+
+
+<script src="/scripts/searchLocation.js"></script>
+<!--<script type="module">-->
+<!--const onSearch = (event) => {-->
+<!--console.log('onSearch');-->
+<!--event.preventDefault();-->
+<!--const postal = event.target.postal.value;-->
+<!--// open collection-->
+<!--window.location.replace(location.origin + '/locations/' + postal)-->
+<!--};-->
+<!--</script>-->
