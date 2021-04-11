@@ -9,7 +9,7 @@
     "dev": "NODE_ENV=dev npm-run-all clean -p watch:* -- --watch",
     "serve:11ty": "eleventy --serve",
     "watch:11ty": "eleventy --watch",
-    "build:11ty": "eleventy --build",
+    "build:11ty": "eleventy",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:rollup": "rollup -c rollup.config.js",
     "watch:rollup": "rollup -c rollup.config.js --watch",
