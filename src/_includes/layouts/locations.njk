@@ -32,7 +32,7 @@ templateClass: tmpl-locations
 <ul class="location-list">
     <template x-for="item in locations" :key="item">
         <li>
-            <a x-bind:href="'/location/' + item.uuid" x-text="item.name"></a>
+            <a x-bind:href="'location/' + item.uuid" x-text="item.name"></a>
         </li>
 </template>
 </ul>
