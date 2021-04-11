@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test Locations</title>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1>Test Locations</h1>
+
+<p>hi locations</p>
+
+<div x-data="form()">
+
+<form  x-on:submit="onSearch($event)">
+
+    <label>
+    Postal:
+    <input required="true" name="postal" x-model="postal" value="66117" placeholder="66117" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$"/>
+    </label>
+    <button type="submit" id="submitBtn">Search</button>
+</form>
+
+
+<!--<ul>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/engel-apotheke">Engel-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/tal-apotheke">Tal-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/andreas-apotheke">Andreas-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-isabell-kuhnle-adler">Dr. Isabell Kühnle-Adler</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/frank-donate">Frank Donate</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/josef-schmitt">Josef Schmitt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/nathalie-flammang">Nathalie Flammang</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ring-apotheke">Ring-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-wolfram-benoist">Dr. Wolfram Benoist</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-sebastiandorst-sebastian">Gemeinschaftspraxis Dres. Sebastian/Dorst-Sebastian</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/sabine-braun">Sabine Braun</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/barbara-apotheke">Barbara-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/rats-apotheke">Rats-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schlossberg-apotheke">Schlossberg-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/christina-baumann">Christina Baumann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-raban-baumann">Dr. Raban Baumann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-tom-ring">Dr. Tom Ring</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-martin-thielen">Dr. Martin Thielen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/berg-und-hutten-apotheke">Berg- und Hütten-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/odilien-apotheke">Odilien-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/pachtener-apotheke">Pachtener-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-guido-ospelt">Dr. Guido Ospelt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-marcus-maier">Dr. Marcus Maier</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-matthias-heinze">Dr. Matthias Heinze</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-moritz-schmitt">Dr. Moritz Schmitt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-frankfrank">Gemeinschaftspraxis Frank/Frank</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/hans-jurgen-huber">Hans Jürgen Huber</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/st.barbara-apotheke">St.Barbara-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/marien-apotheke">Marien-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-gabriele-andler">Dr. Gabriele Andler</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-hans-martin-schmidt">Dr. Hans Martin Schmidt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/katrin-bungert-feldmann">Katrin Bungert-Feldmann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/zahnarztpraxis-weimer">Zahnarztpraxis Weimer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/za.-p.-weimer">ZA. P. Weimer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ostertal-apotheke">Ostertal-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/olivier-hagenbourger">Olivier Hagenbourger</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/festhalle">Festhalle</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-fischer-fischer">Gemeinschaftspraxis Dres. Fischer/ Fischer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-maimai">Gemeinschaftspraxis Dres. Mai/Mai</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-muller-kahmannottobecker">Gemeinschaftspraxis Dres. Müller-Kähmann/Otto/Becker</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-wahl-dietz-klasen">Gemeinschaftspraxis Wahl-Dietz/ Klasen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-m.-schneider">Dr. M. Schneider</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/lowen-apotheke">Löwen-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-zieglerbeckerschwendich">Gemeinschaftspraxis Ziegler/Becker/Schwendich</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/rossel-apotheke">Rossel-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-magdolna-nemcsik">Dr. Magdolna Nemcsik</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/lidia-barth">Lidia Barth</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/post-apotheke">Post-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dominik-folz">Dominik Folz</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-lodz-maciej-kowalski">Dr. Lodz Maciej Kowalski</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-manuela-jung">Dr. Manuela Jung</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-bauerwagner">Gemeinschaftspraxis Dres. Bauer/Wagner</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-fuchsmichalskiadapoe-doamekpor">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-fuchsmichalskiadapoe-doamekpor">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/huu-dinh">Huu Dinh</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/christof-kurz">Christof Kurz</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/za.-t.-schlicker">ZA. T. Schlicker</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-am-enklerplatz">Apotheke am Enklerplatz</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/bahnhof-apotheke">Bahnhof-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schloss-apotheke">Schloss-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-am-erbach">Apotheke am Erbach</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/anette-hilpert">Anette Hilpert</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/arno-winter">Arno Winter</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-antje-hammers-reinhard">Dr. Antje Hammers-Reinhard</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-hans-jakob-schondorf">Dr. Hans Jakob Schöndorf</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/farzaneh-ardestani">Farzaneh Ardestani</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-reichertwahlenstierkorbholtsmark">Gemeinschaftspraxis Dres. Reichert/Wahlen/Stierkorb/Holtsmark</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-schmidtschuld">Gemeinschaftspraxis Schmidt/Schuld</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-schmidtschuld">Gemeinschaftspraxis Schmidt/Schuld</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/hasan-ramadan">Hasan Ramadan</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/baren-apotheke">Bären-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/st.-stephanus-apotheke">St. Stephanus-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/barbara-apotheke">Barbara-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/husaren-apotheke">Husaren-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-hoppstadter-andre">Gemeinschaftspraxis Hoppstädter/ André</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/alexander-indermark">Alexander Indermark</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-anke-kissinger-fischer">Dr. Anke Kissinger-Fischer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/zahnarztpraxis-am-dreiherreneck">Zahnarztpraxis am Dreiherreneck</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-gudula-zimper">Dr. Gudula Zimper</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-martina-teja">Dr. Martina Teja</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-nicklauskirch">Gemeinschaftspraxis Dr. Nicklaus/Kirch</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/hermann-forster">Hermann Forster</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-gudrun-furst">Dr. Gudrun Fürst</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-heid-schneider">Gemeinschaftspraxis Dr. Heid/ Schneider</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/john-warmann">John Warmann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-h.-honel">Dr. H. Hönel</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/docmorris-apotheke">DocMorris-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schutzen-apotheke">Schützen-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/bernhard-altmeyer">Bernhard Altmeyer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/bernhard-schumacher">Bernhard Schumacher</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-hertrichkonietzke">Gemeinschaftspraxis Dr. Hertrich/Konietzke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-fuchsmichalskiadapoe-doamekpor">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-eisenbrandeisenbrand">Gemeinschaftspraxis Eisenbrand/Eisenbrand</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/waldemar-stern">Waldemar Stern</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/mauritius-apotheke">Mauritius-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/mandelbach-apotheke">Mandelbach-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-sibylle-zanger">Dr. Sibylle Zänger</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schnellteststation-im-saal-niederlander">Schnellteststation im Saal Niederländer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schnellteststation-im-rathaus">Schnellteststation im Rathaus</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schnellteststation-im-foyer-der-bliestalhalle">Schnellteststation im Foyer der Bliestalhalle</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schnellteststation-im-dorfgemeinschaftshaus-bebelsheim">Schnellteststation im Dorfgemeinschaftshaus Bebelsheim</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-michael-morsdorf">Dr. Michael Mörsdorf</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-stephan-degro">Dr. Stephan Degro</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-ammannbungert">Gemeinschaftspraxis Ammann/Bungert</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/turnhalle-grundschule">Turnhalle Grundschule</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/lowen-apotheke">Löwen-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/za.-t.-decker">ZA. T. Decker</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-im-gesundheitscampus">Apotheke im Gesundheitscampus</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/fellenberg-apotheke">Fellenberg-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-georg-radosa">Dr. Georg Radosa</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-rettig-ewenkuppersleinen">Gemeinschaftspraxis Dres. Rettig-Ewen/Küppers/Leinen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-giersbergloris">Gemeinschaftspraxis Giersberg/Loris</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/jorg-rubsteck">Jörg Rübsteck</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/mvz-merzig">MVZ Merzig</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/silvia-heinrich-seger">Silvia Heinrich-Seger</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/thomas-dehnen">Thomas Dehnen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/doc&#39;s-apotheke-neunkirchen">Doc&#39;s-Apotheke Neunkirchen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/kepler-apotheke">Kepler-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ali-dastbaz">Ali Dastbaz</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/christine-fabian">Christine Fabian</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-harald-seidler">Dr. Harald Seidler</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-jorg-angresius">Dr. Jörg Angresius</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/igor-fleer">Igor Fleer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-klassmippi">Gemeinschaftspraxis Dres. Klass/Mippi</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/petra-ost-becker">Petra Ost-Becker</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-johannesschmieden">Gemeinschaftspraxis Johannes/Schmieden</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/der-neunkircher-testbus">Der Neunkircher Testbus</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/hubertus-apotheke">Hubertus Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-marcus-schlich">Dr. Marcus Schlich</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-bencsikbencsik">Gemeinschaftspraxis Dres. Bencsik/Bencsik</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-freyfrey">Gemeinschaftspraxis Frey/Frey</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-bernhard-steines">Dr. Bernhard Steines</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/kohlerhalle-walhausen">Köhlerhalle Walhausen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/hochwald-apotheke-06873-240">Hochwald-Apotheke, 06873-240</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/primstal-apotheke">Primstal-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-offermannschneider">Gemeinschaftspraxis Dres. Offermann/Schneider</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/za.-m.-rupp">ZA. M. Rupp</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/burgerhaus">Bürgerhaus</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/bostalsee">Bostalsee</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-rauberkandels">Gemeinschaftspraxis Dres. Rauber/Kandels</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dorfgemeinschaftshaus">Dorfgemeinschaftshaus</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schloss-apotheke">Schloss-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-judith-simonett">Dr. Judith Simonett</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/martina-hoffmann-kummel">Martina Hoffmann-Kümmel</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/roswitha-weber">Roswitha Weber</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/grenzland-apotheke">Grenzland-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/romer-apotheke">Römer-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-thomas-roder">Dr. Thomas Röder</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/roland-woll">Roland Woll</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-am-markt">Apotheke am Markt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-peter-treitz">Dr. Peter Treitz</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/andreas-dutka">Andreas Dutka</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-andreas-pletat">Dr. Andreas Pletat</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-nicole-weiten">Dr. Nicole Weiten</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-oliver-lob">Dr. Oliver Löb</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gerhard-becker">Gerhard Becker</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/san.-rat-dr.-eckart-rolshoven">San.-Rat Dr. Eckart Rolshoven</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-werner-reichert">Dr. Werner Reichert</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-gunderschneider">Gemeinschaftspraxis Dr. Günder/Schneider</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/saartal-apotheke">Saartal-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/st.-martin-apotheke">St. Martin-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-wenzl-bauerwenzl">Gemeinschaftspraxis Dres. Wenzl-Bauer/Wenzl</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/albrecht-krober">Albrecht Kröber</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-bellmanngodel">Gemeinschaftspraxis Dr. Bellmann/Godel</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-messerle-dr.-schweizer">Gemeinschaftspraxis Messerle/ Dr. Schweizer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-messerle-kreckmann">Gemeinschaftspraxis Dr. Messerle/ Kreckmann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/viktoria-apotheke">Viktoria-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-im-medizeum">Apotheke im Medizeum</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/stengel-apotheke">Stengel-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/kramer&#39;sche-apotheke">Kramer&#39;sche Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-am-geisberg">Apotheke am Geisberg</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-am-zoo">Apotheke am Zoo</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/romer-apotheke">Römer-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/rotenbuhl-apotheke">Rotenbühl-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/barbara-apotheke">Barbara-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-im-globus">Apotheke im Globus</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/einhorn-apotheke">Einhorn-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/linden-apotheke">Linden-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/markus-apotheke">Markus-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/claudia-scharl">Claudia Scharl</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-anne-benn-lembert">Dr. Anne Benn Lembert</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-agathe-krahl">Dr. Agathe Krahl</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-diana-csikai">Dr. Diana Csikai</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-gokmen-gul">Dr. Gökmen Gül</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-jo-brauer">Dr. Jo Brauer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-katrin-bachelier">Dr. Katrin Bachelier</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-najib-muller-butow">Dr. Najib Müller-Bütow</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-petra-karst">Dr. Petra Karst</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-thomas-dapper">Dr. Thomas Dapper</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-vera-endres">Dr. Vera Endres</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-dietrichdietrich">Gemeinschaftspraxis Dr. Dietrich/Dietrich</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-kuppigduchowdreschersteimer">Gemeinschaftspraxis Dres. Kuppig/Duchow/Drescher/Steimer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-gospodinovprojsner">Gemeinschaftspraxis Gospodinov/Projsner</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/horst-philippi">Horst Philippi</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/karoline-jager">Karoline Jager</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/rainer-hoffmann">Rainer Hoffmann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/wolfgang-wahlster">Wolfgang Wahlster</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-papageorgiou-agisilaos">Dr. Papageorgiou Agisilaos</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-m.-di-lorenzo">Dr. M. Di Lorenzo</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-t.-gessner">Dr. T. Geßner</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dres.-hahnweberhahn-ferreira">Dres. Hahn/Weber/Hahn Ferreira</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-p.-klein">Dr. P. Klein</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/bag-anna-bottcherbottcher">BAG Anna-Böttcher/Böttcher</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-annette-geiger-klein">Dr. Annette Geiger-Klein</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-dirk-pilger">Dr. Dirk Pilger</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-thomas-kirch">Dr. Thomas Kirch</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-zimmerschimke">Gemeinschaftspraxis Dr. Zimmer/Schimke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/wannenmacherfuchs">Wannenmacher/Fuchs</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-korpysplitt-wehnertloytved">Gemeinschaftspraxis Dres. Korpys/Plitt-Wehnert/Loytved</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/olga-piatezki">Olga Piatezki</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/saeb-awad">Saeb Awad</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/frank-born">Frank Born</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/german-dressen">German Dreßen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-said-seidahmadi">Dr. Said Seidahmadi</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-jacobijacobi">Gemeinschaftspraxis Dr. Jacobi/Jacobi</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-f.-petryc.petry">Dr. F. Petry/C.Petry</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/christian-lahr">Christian Lahr</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-julia-lohmann">Dr. Julia Lohmann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-liane-berndt">Dr. Liane Berndt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-martin-neu">Dr. Martin Neu</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/karl-josef-pirrung">Karl-Josef Pirrung</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/markus-breitenbach">Markus Breitenbach</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/peter-sulger">Peter Sulger</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/thomas-johannes">Thomas Johannes</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-kleinreinert">Gemeinschaftspraxis Dres. Klein/Reinert</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/tatjana-kotro">Tatjana Kotro</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ursula-danner-baltes">Ursula Danner-Baltes</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/anne-meier-heinrich">Anne Meier-Heinrich</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/bernd-allmannsberger">Bernd Allmannsberger</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-manuela-petak">Dr. Manuela Petak</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-martin-jockers">Dr. Martin Jockers</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-kocmarzstenger">Gemeinschaftspraxis Dres. Koc/Marz/Stenger</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ralph-theres">Ralph Theres</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/werner-meier">Werner Meier</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-markus-niedereichholz">Dr. Markus Niedereichholz</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-dorothee-gaul">Dr. Dorothee Gaul</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-kerstin-mayer">Dr. Kerstin Mayer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-kleinwinkelspecht">Gemeinschaftspraxis Klein/Winkelspecht</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ute-ulrich">Ute Ulrich</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-christof-weber">Dr. Christof Weber</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-barbara-busse">Dr. Barbara Busse</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-schmidttosounidis">Gemeinschaftspraxis Dres. Schmidt/Tosounidis</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/stephan-getzlaff">Stephan Getzlaff</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-klaus-bauer">Dr. Klaus Bauer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-veauthierveauthier">Gemeinschaftspraxis Veauthier/Veauthier</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/corona-testzentrum-gudingen">Corona Testzentrum Güdingen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/corona-testzentrum-brebach-">Corona Testzentrum Brebach,  -</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apotheke-im-globus">Apotheke im Globus</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/romer-apotheke">Römer-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/apollonia-apotheke">Apollonia Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gluckauf-apotheke">Glückauf-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-holger-gross">Dr. Holger Groß</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-jan-berner">Dr. Jan Berner</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-med.-maria-liszka">Dr. med. Maria Liszka</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-peter-szymanski">Dr. Peter Szymanski</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-thomas-nauhauser">Dr. Thomas Nauhauser</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dres.-linksteffenphilippsbitsch">Dres. Link/Steffen/Philipps/Bitsch</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-djoudisalm">Gemeinschaftspraxis Dr. Djoudi/Salm</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-breyermolter-carbini">Gemeinschaftspraxis Dres. Breyer/Molter-Carbini</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/herbert-hanisch">Herbert Hanisch</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/mvz-saar-dr.-ihmann">MVZ-Saar Dr. Ihmann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-benedict-schmitt">Dr. Benedict Schmitt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-a.-blaes-salz">Dr. A. Blaes-Salz</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/husaren-apotheke">Husaren-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dres.-neyporzsolt">Dres. Ney/Porzsolt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-adolphmissler">Gemeinschaftspraxis Adolph/Mißler</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dr.-borkowskiborkowski">Gemeinschaftspraxis Dr. Borkowski/Borkowski</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/thomas-mann-apotheke">Thomas Mann-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ali-tadjrischi">Ali Tadjrischi</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-ammannbungert-(hr.-troitzsch)">Gemeinschaftspraxis Ammann/Bungert (Hr. Troitzsch)</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-omloromlor">Gemeinschaftspraxis Dres. Omlor/Omlor</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/limbacher-apotheke">Limbacher-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-stefan-gross">Dr. Stefan Groß</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-klaus-umlauf">Dr. Klaus Umlauf</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-silke-hauck">Dr. Silke Hauck</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ibrahim-othman">Ibrahim Othman</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gambrinus-apotheke">Gambrinus-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ingobertus-apotheke">Ingobertus-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/rohrbach-apotheke">Rohrbach-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/johannis-apotheke">Johannis-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-dirk-bauer">Dr. Dirk Bauer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/frank-rausch">Frank Rausch</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/karsten-theiss">Karsten Theiß</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/mvz-st.-ingbert-dennis-borces">MVZ St. Ingbert Dennis Borces</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/bernhard-kohl">Bernhard Kohl</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-claudia-jobst">Dr. Claudia Jobst</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-eduard-schmid">Dr. Eduard Schmid</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-harald-thommes">Dr. Harald Thömmes</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-saskia-ost-zeyer">Dr. Saskia Ost-Zeyer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-casparyburgheim">Gemeinschaftspraxis Caspary/Burgheim</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-rauberkandels">Gemeinschaftspraxis Dres. Rauber/Kandels</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-d.-+-s.-hor">Dr. D. + S. Hör</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/prof.-dr.-dr.-p.-maurer">Prof. Dr. Dr. P. Maurer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/testzentrum-bosenbach">Testzentrum Bosenbach</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schnelltestzentrum-in-der-parkstrasse-9-in-st.-wendel">Schnelltestzentrum in der Parkstraße 9 in St. Wendel</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/salzbrunnen-apotheke">Salzbrunnen-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-anja-fischer">Dr. Anja Fischer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-petra-birtel">Dr. Petra Birtel</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-sigrid-uhlig">Dr. Sigrid Uhlig</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-lutz-kirbis">Dr. Lutz Kirbis</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-klemmfrank">Gemeinschaftspraxis Dres. Klemm/Frank</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/orthozentrum-saar">Orthozentrum Saar</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/werner-ganz">Werner Ganz</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-heinrich-habig">Dr. Heinrich Habig</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/montag:">Montag:</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dienstag:">Dienstag:</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/mittwoch:">Mittwoch:</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/donnerstag:">Donnerstag:</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/freitag:">Freitag:</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-joachim-schillen">Dr. Joachim Schillen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-schmidtkosiol">Gemeinschaftspraxis Dres. Schmidt/Kosiol</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/landmann-apotheke">Landmann Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/merkur-apotheke">Merkur-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-andreas-niethammer">Dr. Andreas Niethammer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-bogdan-milek">Dr. Bogdan Milek</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-christian-wehberg">Dr. Christian Wehberg</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-stefanie-zahn-dingfelder">Dr. Stefanie Zahn-Dingfelder</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/ramin-moili">Ramin Moili</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-c.-andres">Dr. C. Andres</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-christian-brunner">Dr. Christian Brunner</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-cornelia-friedrich-meyer">Dr. Cornelia Friedrich-Meyer</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-wolfgang-hoffmann">Dr. Wolfgang Hoffmann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-dres.-bonakdararlt">Gemeinschaftspraxis Dres. Bonakdar/Arlt</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gemeinschaftspraxis-frankmeyerraber">Gemeinschaftspraxis Frank/Meyer/Raber</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/thomas-rehlinger">Thomas Rehlinger</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/schlossberghalle-in-buschfeld">Schlossberghalle in Büschfeld</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/gangolf-apotheke">Gangolf-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/abtei-apotheke">Abtei-Apotheke</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-franca-gatto-collura-06834-41478-lindenstrasse-75-66787-wadgassen">Dr. Franca Gatto-Collura, 06834-41478, Lindenstraße 75, 66787 Wadgassen</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-hans-hermann-zipp">Dr. Hans Hermann Zipp</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-sabine-schackmann">Dr. Sabine Schackmann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/till-woysch">Till Woysch</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-franca-gatto-collura">Dr. Franca Gatto-Collura</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-e.-bahnemann">Dr. E. Bahnemann</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/park-apotheke-thiel-trennheuser-ohg">Park-Apotheke Thiel-Trennheuser OHG</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-michael-kulas">Dr. Michael Kulas</a>-->
+<!--</li>-->
+<!---->
+<!--<li>-->
+<!--    <a href="/location/dr.-a.-buchmann">Dr. A. Buchmann</a>-->
+<!--</li>-->
+<!---->
+<!--</ul>-->
+
+<ul class="location-list">
+    <template x-for="item in locations" :key="item">
+        <li>
+            <a x-bind:href="'/location/' + item.uuid" x-text="item.name"></a>
+        </li>
+</template>
+</ul>
+</div>
+
+
+
+<script src="/scripts/searchLocation.js"></script>
+<!--<script type="module">-->
+<!--const onSearch = (event) => {-->
+<!--console.log('onSearch');-->
+<!--event.preventDefault();-->
+<!--const postal = event.target.postal.value;-->
+<!--// open collection-->
+<!--window.location.replace(location.origin + '/locations/' + postal)-->
+<!--};-->
+<!--</script>-->
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+<script src="/scripts/alpine.js"></script>
+<script src="/scripts/bundle.js"></script>
+
+</body></html>
