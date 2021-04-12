@@ -4,4 +4,6 @@ description: This is a demonstration website generated using the 11ty static sit
 layout: layouts/base.njk
 ---
 
-index test page
+
+<a href="{{'/locations/page-0/' | url}}">Schnelltest (PoC)</a>
+<!-- <a href="{{'/' | url}}">Testzenteren (PCR & PoC)</a> -->

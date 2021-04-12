@@ -1,13 +1,18 @@
 ---
+pagination:
+    data: locations
+    alias: locations
+    size: 25
+permalink: "locations/page-{{ pagination.pageNumber }}/"
 description: Currently available test locations.
 layout: layouts/locations.njk
 ---
-
-test
 
 {%for l in locations %}
     <p>
         <a href="{{ 'location/' + l.uuid }}">{{l.name}}</a>
     </p>
-
 {%endfor %}
+
+<a href={{pagination.previous}}><</a>
+<a href={{pagination.next}}>></a>

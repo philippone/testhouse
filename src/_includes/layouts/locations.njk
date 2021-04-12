@@ -7,39 +7,32 @@ templateClass: tmpl-locations
 
 <h1>{{ title }}</h1>
 
-<div x-data="form()">
-
-<form  x-on:submit="console.log('test');$event.preventDefault(); window.location.replace(location.origin + '/locations/' + $event.target.postal.value);">
+<form  onsubmit="onSubmit(event)">
 
     <label>
-    Postal:
-    <input required="true" name="postal"  value="{{locationPostal}}" placeholder="66117" type="text"
+    Suche:
+    <input name="postal"  value="{{locationPostal}}" placeholder="PLZ" type="text"
            pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
     </label>
-    <button type="submit" id="submitBtn">Search</button>
+    <button type="submit" id="submitBtn">Suchen</button>
 </form>
 
 {{ content | safe }}
 
 
-{# <ul class="location-list">
-    <template x-for="item in locations" :key="item">
-        <li>
-            <a x-bind:href="'location/' + item.uuid" x-text="item.name"></a>
-        </li>
-</template>
-</ul>
-</div> #}
 {% endblock %}
 
+<script>
 
-<script src="{{'/scripts/searchLocation.js' | url}}"></script>
-<!--<script type="module">-->
-<!--const onSearch = (event) => {-->
-<!--console.log('onSearch');-->
-<!--event.preventDefault();-->
-<!--const postal = event.target.postal.value;-->
-<!--// open collection-->
-<!--window.location.replace(location.origin + '/locations/' + postal)-->
-<!--};-->
-<!--</script>-->
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
