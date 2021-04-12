@@ -9,7 +9,7 @@
     "build:testhouse": "npm-run-all clean build:rollup build:11ty-testhouse",
     "dev": "NODE_ENV=dev npm-run-all clean -p watch:* -- --watch",
     "serve:11ty": "eleventy --serve",
-    "watch:11ty": "eleventy --watch",
+    "watch:11ty": "eleventy --serve",
     "build:11ty": "eleventy",
     "build:11ty-testhouse": "eleventy --pathprefix='testhouse'",
     "test": "echo \"Error: no test specified\" && exit 1",

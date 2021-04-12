@@ -12,8 +12,6 @@ for(const location of locations) {
 
 }
 
-console.log(locationsByPostal);
-
 module.exports = locationsByPostal;
 //
 // module.exports = [

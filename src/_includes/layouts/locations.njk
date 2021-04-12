@@ -14,8 +14,8 @@ templateClass: tmpl-locations
 
     <label>
     Postal:
-    <input required="true" name="postal" x-model="postal" value="66117" placeholder="66117" type="text"
-           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$"/>
+    <input required="true" name="postal" x-model="postal" placeholder="66117" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
     </label>
     <button type="submit" id="submitBtn">Search</button>
 </form>
