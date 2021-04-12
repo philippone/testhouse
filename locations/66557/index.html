@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -175,37 +179,77 @@
 
         
                 
-                <p>
-                   <a href="location/72">Bären-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/72">
+  <p>Bären-Apotheke</p>
+  <p>Ottweilerstr. 66557</p>
+  <p>06825-941244</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/73">St. Stephanus-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/73">
+  <p>St. Stephanus-Apotheke</p>
+  <p>Hauptstr. 66557</p>
+  <p>06825-48151</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/74">Barbara-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/74">
+  <p>Barbara-Apotheke</p>
+  <p>Neunkircher Str. 66557</p>
+  <p>06825-2011</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/75">Husaren-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/75">
+  <p>Husaren-Apotheke</p>
+  <p>Zeppelinstr. 66557</p>
+  <p>06825-404790</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/76">Gemeinschaftspraxis Hoppstädter/ André</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/76">
+  <p>Gemeinschaftspraxis Hoppstädter/ André</p>
+  <p>Hauptstraße 66557</p>
+  <p>06825-952950</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/77">Alexander Indermark</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/77">
+  <p>Alexander Indermark</p>
+  <p>Hauptstraße 66557</p>
+  <p>06825-1611</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/78">Dr. Anke Kissinger-Fischer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/78">
+  <p>Dr. Anke Kissinger-Fischer</p>
+  <p>Ottweilerstraße 66557</p>
+  <p>06825-46901</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/79">Zahnarztpraxis am Dreiherreneck</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/79">
+  <p>Zahnarztpraxis am Dreiherreneck</p>
+  <p>06825- 66557</p>
+  <p>06825-9589672</p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

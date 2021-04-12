@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -147,57 +151,122 @@
 
         
                 
-                <p>
-                   <a href="location/59">Apotheke am Enklerplatz</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/59">
+  <p>Apotheke am Enklerplatz</p>
+  <p>Talstr. 66424</p>
+  <p>06841-9825089</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/60">Bahnhof-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/60">
+  <p>Bahnhof-Apotheke</p>
+  <p>Eisenbahnstr. 66424</p>
+  <p>06841-4081</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/61">Schloss-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/61">
+  <p>Schloss-Apotheke</p>
+  <p>Saar-Pfalz-Str. 66424</p>
+  <p>06841-72058</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/62">Apotheke am Erbach</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/62">
+  <p>Apotheke am Erbach</p>
+  <p>Berliner Str. 104- 66424</p>
+  <p>06841-755018</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/63">Anette Hilpert</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/63">
+  <p>Anette Hilpert</p>
+  <p>Saar-Pfalz-Straße 66424</p>
+  <p>06841-73877</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/64">Arno Winter</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/64">
+  <p>Arno Winter</p>
+  <p>Ortsstraße 66424</p>
+  <p>06841-1480</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/65">Dr. Antje Hammers-Reinhard</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/65">
+  <p>Dr. Antje Hammers-Reinhard</p>
+  <p>Saarbrücker Straße 66424</p>
+  <p>06841-72222</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/66">Dr. Hans Jakob Schöndorf</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/66">
+  <p>Dr. Hans Jakob Schöndorf</p>
+  <p>Talstraße 66424</p>
+  <p>06841-5061</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/67">Farzaneh Ardestani</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/67">
+  <p>Farzaneh Ardestani</p>
+  <p>Dürerstraße 66424</p>
+  <p>06841-1721271</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/68">Gemeinschaftspraxis Dres. Reichert/Wahlen/Stierkorb/Holtsmark</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/68">
+  <p>Gemeinschaftspraxis Dres. Reichert/Wahlen/Stierkorb/Holtsmark</p>
+  <p> 66424</p>
+  <p>06841-932321</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/69">Gemeinschaftspraxis Schmidt/Schuld</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/69">
+  <p>Gemeinschaftspraxis Schmidt/Schuld</p>
+  <p>Untergasse 66424</p>
+  <p>06841-15588</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/70">Gemeinschaftspraxis Schmidt/Schuld</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/70">
+  <p>Gemeinschaftspraxis Schmidt/Schuld</p>
+  <p>Untergasse 66424</p>
+  <p>06841-15588</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/71">Hasan Ramadan</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/71">
+  <p>Hasan Ramadan</p>
+  <p>Zweibrücker Straße 66424</p>
+  <p>06841-2250</p>
+</a>
+  ----
+
                 
         
 
@@ -361,9 +430,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

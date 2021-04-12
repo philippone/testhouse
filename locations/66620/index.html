@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -203,21 +207,41 @@
 
         
                 
-                <p>
-                   <a href="location/135">Hochwald-Apotheke, 06873-240</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/135">
+  <p>Hochwald-Apotheke, 06873-240</p>
+  <p> 66620</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/136">Primstal-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/136">
+  <p>Primstal-Apotheke</p>
+  <p>Hauptstr. 66620</p>
+  <p>06875-688</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/137">Gemeinschaftspraxis Dres. Offermann/Schneider</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/137">
+  <p>Gemeinschaftspraxis Dres. Offermann/Schneider</p>
+  <p>Am Hammerberg 66620</p>
+  <p>06873-7727</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/138">ZA. M. Rupp</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/138">
+  <p>ZA. M. Rupp</p>
+  <p>Hauptstraße 66620</p>
+  <p>06875-7911</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

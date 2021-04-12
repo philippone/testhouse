@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -63,45 +67,95 @@
 
         
                 
-                <p>
-                   <a href="location/172">Apotheke am Geisberg</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/172">
+  <p>Apotheke am Geisberg</p>
+  <p>Kaiserstr. 66121</p>
+  <p>0681-894476</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/173">Apotheke am Zoo</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/173">
+  <p>Apotheke am Zoo</p>
+  <p>Brandenburger Platz 66121</p>
+  <p>0681-818961</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/218">Christian Lahr</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/218">
+  <p>Christian Lahr</p>
+  <p>Mainzer Straße 66121</p>
+  <p>0681-65008</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/219">Dr. Julia Lohmann</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/219">
+  <p>Dr. Julia Lohmann</p>
+  <p>Mainzer Straße 66121</p>
+  <p>0681-648884</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/220">Dr. Liane Berndt</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/220">
+  <p>Dr. Liane Berndt</p>
+  <p>Eschberger Weg 66121</p>
+  <p>0681-98833744</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/221">Dr. Martin Neu</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/221">
+  <p>Dr. Martin Neu</p>
+  <p>Mainzer Straße 66121</p>
+  <p>0681-61800</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/222">Karl-Josef Pirrung</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/222">
+  <p>Karl-Josef Pirrung</p>
+  <p>Kaiserstraße 66121</p>
+  <p>0681-897337</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/223">Markus Breitenbach</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/223">
+  <p>Markus Breitenbach</p>
+  <p>Arndtstraße 66121</p>
+  <p>0681-831440</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/224">Peter Sulger</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/224">
+  <p>Peter Sulger</p>
+  <p>Mainzer Straße 66121</p>
+  <p>0681-648884</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/225">Thomas Johannes</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/225">
+  <p>Thomas Johannes</p>
+  <p>Eschberger Hofplatz 66121</p>
+  <p>0681-9850260</p>
+</a>
+  ----
+
                 
         
 
@@ -349,9 +403,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

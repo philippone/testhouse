@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -275,13 +279,23 @@
 
         
                 
-                <p>
-                   <a href="location/342">Park-Apotheke Thiel-Trennheuser OHG</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/342">
+  <p>Park-Apotheke Thiel-Trennheuser OHG</p>
+  <p>Hauptstr. 66798</p>
+  <p>06831-4870848</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/343">Dr. Michael Kulas</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/343">
+  <p>Dr. Michael Kulas</p>
+  <p>Moselstraße 66798</p>
+  <p>06837-74144</p>
+</a>
+  ----
+
                 
         
 
@@ -317,9 +331,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -103,21 +107,41 @@
 
         
                 
-                <p>
-                   <a href="location/84">Dr. Gudrun Fürst</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/84">
+  <p>Dr. Gudrun Fürst</p>
+  <p>Elsässer Straße 66271</p>
+  <p>06805-2468</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/85">Gemeinschaftspraxis Dr. Heid/ Schneider</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/85">
+  <p>Gemeinschaftspraxis Dr. Heid/ Schneider</p>
+  <p>Elsässer Straße 66271</p>
+  <p>06805-3033</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/86">John Warmann</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/86">
+  <p>John Warmann</p>
+  <p>Brückenstraße 66271</p>
+  <p>06805-8318</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/87">Dr. H. Hönel</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/87">
+  <p>Dr. H. Hönel</p>
+  <p>Fechinger Straße 66271</p>
+  <p>06805-22016</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

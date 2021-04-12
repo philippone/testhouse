@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -291,9 +295,14 @@
 
         
                 
-                <p>
-                   <a href="location/329">Abtei-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/329">
+  <p>Abtei-Apotheke</p>
+  <p>Lindenstr. 66878</p>
+  <p>06834-94130</p>
+</a>
+  ----
+
                 
         
 
@@ -313,9 +322,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -47,29 +51,59 @@
 
         
                 
-                <p>
-                   <a href="location/169">Apotheke im Medizeum</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/169">
+  <p>Apotheke im Medizeum</p>
+  <p>Europaallee 66113</p>
+  <p>0681-883985-0</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/205">Dr. Annette Geiger-Klein</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/205">
+  <p>Dr. Annette Geiger-Klein</p>
+  <p>Rastpfuhl 66113</p>
+  <p>0681-73832</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/206">Dr. Dirk Pilger</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/206">
+  <p>Dr. Dirk Pilger</p>
+  <p>Riegelsberger Straße 66113</p>
+  <p>0681-72424</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/207">Dr. Thomas Kirch</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/207">
+  <p>Dr. Thomas Kirch</p>
+  <p>Rheinstraße 66113</p>
+  <p>0681-71208</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/208">Gemeinschaftspraxis Dr. Zimmer/Schimke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/208">
+  <p>Gemeinschaftspraxis Dr. Zimmer/Schimke</p>
+  <p>Rheinstraße 66113</p>
+  <p>0681-74809</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/209">Wannenmacher/Fuchs</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/209">
+  <p>Wannenmacher/Fuchs</p>
+  <p>Rheinstraße 66113</p>
+  <p>0681-971350</p>
+</a>
+  ----
+
                 
         
 
@@ -333,9 +367,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -123,37 +127,77 @@
 
         
                 
-                <p>
-                   <a href="location/313">Landmann Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/313">
+  <p>Landmann Apotheke</p>
+  <p>Moltkestr. 66333</p>
+  <p>06898-290111</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/314">Merkur-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/314">
+  <p>Merkur-Apotheke</p>
+  <p>Bismarckstr. 66333</p>
+  <p>06898-23010</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/315">Dr. Andreas Niethammer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/315">
+  <p>Dr. Andreas Niethammer</p>
+  <p>Marktstraße 66333</p>
+  <p>06898-26450</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/316">Dr. Bogdan Milek</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/316">
+  <p>Dr. Bogdan Milek</p>
+  <p>Rathausstraße 66333</p>
+  <p>06898-299696</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/317">Dr. Christian Wehberg</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/317">
+  <p>Dr. Christian Wehberg</p>
+  <p>Rathausstraße 66333</p>
+  <p>06898-23895</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/318">Dr. Stefanie Zahn-Dingfelder</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/318">
+  <p>Dr. Stefanie Zahn-Dingfelder</p>
+  <p>Ludweilerstraße 66333</p>
+  <p>06898-76255</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/319">Ramin Moili</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/319">
+  <p>Ramin Moili</p>
+  <p>Marktstraße 66333</p>
+  <p>06898-22369</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/320">Dr. C. Andres</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/320">
+  <p>Dr. C. Andres</p>
+  <p>Völklinger Straße 66333</p>
+  <p>06898-4728</p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

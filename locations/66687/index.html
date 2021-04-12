@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -231,33 +235,68 @@
 
         
                 
-                <p>
-                   <a href="location/321">Dr. Christian Brunner</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/321">
+  <p>Dr. Christian Brunner</p>
+  <p>Uhlandstraße 66687</p>
+  <p>06871-4311</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/322">Dr. Cornelia Friedrich-Meyer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/322">
+  <p>Dr. Cornelia Friedrich-Meyer</p>
+  <p>Hasenberg 66687</p>
+  <p>06871-90950</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/323">Dr. Wolfgang Hoffmann</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/323">
+  <p>Dr. Wolfgang Hoffmann</p>
+  <p>Im Selling 66687</p>
+  <p>06874-302970</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/324">Gemeinschaftspraxis Dres. Bonakdar/Arlt</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/324">
+  <p>Gemeinschaftspraxis Dres. Bonakdar/Arlt</p>
+  <p>Kräwigstraße 2- 66687</p>
+  <p>06871-91093</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/325">Gemeinschaftspraxis Frank/Meyer/Raber</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/325">
+  <p>Gemeinschaftspraxis Frank/Meyer/Raber</p>
+  <p>Kräwigstraße 2- 66687</p>
+  <p>06871-909880</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/326">Thomas Rehlinger</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/326">
+  <p>Thomas Rehlinger</p>
+  <p>Im Selling 66687</p>
+  <p>06874-555</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/327">Schlossberghalle in Büschfeld</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/327">
+  <p>Schlossberghalle in Büschfeld</p>
+  <p>Eisenbahnstraße 66687</p>
+  <p></p>
+</a>
+  ----
+
                 
         
 
@@ -337,9 +376,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

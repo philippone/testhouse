@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -195,13 +199,23 @@
 
         
                 
-                <p>
-                   <a href="location/107">Löwen-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/107">
+  <p>Löwen-Apotheke</p>
+  <p>Hauptstr. 66589</p>
+  <p>06825-6666</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/108">ZA. T. Decker</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/108">
+  <p>ZA. T. Decker</p>
+  <p>Blumenstraße 66589</p>
+  <p>06825-8007979</p>
+</a>
+  ----
+
                 
         
 
@@ -317,9 +331,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

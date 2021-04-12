@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -283,37 +287,77 @@
 
         
                 
-                <p>
-                   <a href="location/88">DocMorris-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/88">
+  <p>DocMorris-Apotheke</p>
+  <p>Poststr. 66822</p>
+  <p>06881-9362090</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/89">Schützen-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/89">
+  <p>Schützen-Apotheke</p>
+  <p>Saarbrücker Str. 66822</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/90">Bernhard Altmeyer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/90">
+  <p>Bernhard Altmeyer</p>
+  <p>Poststraße 66822</p>
+  <p>06881-936623</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/91">Bernhard Schumacher</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/91">
+  <p>Bernhard Schumacher</p>
+  <p>Poststraße 66822</p>
+  <p>06881-8808522</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/92">Gemeinschaftspraxis Dr. Hertrich/Konietzke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/92">
+  <p>Gemeinschaftspraxis Dr. Hertrich/Konietzke</p>
+  <p>Am Bahnhof 66822</p>
+  <p>06881-52020</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/93">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/93">
+  <p>Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</p>
+  <p> 66822</p>
+  <p>06806-98610</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/94">Gemeinschaftspraxis Eisenbrand/Eisenbrand</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/94">
+  <p>Gemeinschaftspraxis Eisenbrand/Eisenbrand</p>
+  <p>Lehmkaul 66822</p>
+  <p>06888-1737</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/95">Waldemar Stern</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/95">
+  <p>Waldemar Stern</p>
+  <p>Am Bahnhof 66822</p>
+  <p>06881-2444</p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

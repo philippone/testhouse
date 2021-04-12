@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -119,25 +123,50 @@
 
         
                 
-                <p>
-                   <a href="location/39">Gemeinschaftspraxis Dres. Fischer/ Fischer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/39">
+  <p>Gemeinschaftspraxis Dres. Fischer/ Fischer</p>
+  <p>Bismarckstraße 66299</p>
+  <p>06897-89133</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/40">Gemeinschaftspraxis Dres. Mai/Mai</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/40">
+  <p>Gemeinschaftspraxis Dres. Mai/Mai</p>
+  <p>Im Grühlingswald 66299</p>
+  <p>06897-8016</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/41">Gemeinschaftspraxis Dres. Müller-Kähmann/Otto/Becker</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/41">
+  <p>Gemeinschaftspraxis Dres. Müller-Kähmann/Otto/Becker</p>
+  <p> 66299</p>
+  <p>06897-8091</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/42">Gemeinschaftspraxis Wahl-Dietz/ Klasen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/42">
+  <p>Gemeinschaftspraxis Wahl-Dietz/ Klasen</p>
+  <p> 66299</p>
+  <p>06897-9999010</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/43">Dr. M. Schneider</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/43">
+  <p>Dr. M. Schneider</p>
+  <p>Schillerstraße 66299</p>
+  <p>06897-840569</p>
+</a>
+  ----
+
                 
         
 
@@ -329,9 +358,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

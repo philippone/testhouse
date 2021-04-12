@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -271,21 +275,41 @@
 
         
                 
-                <p>
-                   <a href="location/265">Husaren-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/265">
+  <p>Husaren-Apotheke</p>
+  <p>Kirchenstr. 66793</p>
+  <p>06836-86140</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/266">Dres. Ney/Porzsolt</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/266">
+  <p>Dres. Ney/Porzsolt</p>
+  <p>Dorfstraße 66793</p>
+  <p>06838-81036</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/267">Gemeinschaftspraxis Adolph/Mißler</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/267">
+  <p>Gemeinschaftspraxis Adolph/Mißler</p>
+  <p>Wilhelmstraße 14- 66793</p>
+  <p>06838-2348</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/268">Gemeinschaftspraxis Dr. Borkowski/Borkowski</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/268">
+  <p>Gemeinschaftspraxis Dr. Borkowski/Borkowski</p>
+  <p>Vorstadtstraße 66793</p>
+  <p>06838-2419</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -187,21 +191,41 @@
 
         
                 
-                <p>
-                   <a href="location/269">Thomas Mann-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/269">
+  <p>Thomas Mann-Apotheke</p>
+  <p>Hüngersberstr. 66578</p>
+  <p>06821-692122</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/270">Ali Tadjrischi</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/270">
+  <p>Ali Tadjrischi</p>
+  <p>Kreisstraße 66578</p>
+  <p>06821-64004</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/271">Gemeinschaftspraxis Ammann/Bungert (Hr. Troitzsch)</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/271">
+  <p>Gemeinschaftspraxis Ammann/Bungert (Hr. Troitzsch)</p>
+  <p>Auf der Brück 66578</p>
+  <p>06821-6258</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/272">Gemeinschaftspraxis Dres. Omlor/Omlor</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/272">
+  <p>Gemeinschaftspraxis Dres. Omlor/Omlor</p>
+  <p>Redener Straße 66578</p>
+  <p>06821-68356</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

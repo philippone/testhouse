@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -247,9 +251,14 @@
 
         
                 
-                <p>
-                   <a href="location/344">Dr. A. Buchmann</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/344">
+  <p>Dr. A. Buchmann</p>
+  <p>Losheimer Straße 66709</p>
+  <p>06876-7151</p>
+</a>
+  ----
+
                 
         
 
@@ -313,9 +322,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

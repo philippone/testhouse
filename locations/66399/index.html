@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -143,33 +147,68 @@
 
         
                 
-                <p>
-                   <a href="location/96">Mauritius-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/96">
+  <p>Mauritius-Apotheke</p>
+  <p>Adenauerstr. 66399</p>
+  <p>06893-1730</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/97">Mandelbach-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/97">
+  <p>Mandelbach-Apotheke</p>
+  <p>Saarbrücker Str. 66399</p>
+  <p>06803-99450</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/98">Dr. Sibylle Zänger</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/98">
+  <p>Dr. Sibylle Zänger</p>
+  <p>Saarbrücker Straße 66399</p>
+  <p>06803-1623</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/99">Schnellteststation im Saal Niederländer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/99">
+  <p>Schnellteststation im Saal Niederländer</p>
+  <p>Allmendstraße 66399</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/100">Schnellteststation im Rathaus</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/100">
+  <p>Schnellteststation im Rathaus</p>
+  <p> 66399</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/101">Schnellteststation im Foyer der Bliestalhalle</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/101">
+  <p>Schnellteststation im Foyer der Bliestalhalle</p>
+  <p>Ritterstraße 66399</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/102">Schnellteststation im Dorfgemeinschaftshaus Bebelsheim</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/102">
+  <p>Schnellteststation im Dorfgemeinschaftshaus Bebelsheim</p>
+  <p>Margarethenstraße 66399</p>
+  <p></p>
+</a>
+  ----
+
                 
         
 
@@ -337,9 +376,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

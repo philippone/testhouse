@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -71,37 +75,77 @@
 
         
                 
-                <p>
-                   <a href="location/229">Anne Meier-Heinrich</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/229">
+  <p>Anne Meier-Heinrich</p>
+  <p>Saarbrücker Straße 66125</p>
+  <p>06897-7780373</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/230">Bernd Allmannsberger</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/230">
+  <p>Bernd Allmannsberger</p>
+  <p>Liesbet-Dill-Straße 66125</p>
+  <p>06897-75071</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/231">Dr. Manuela Petak</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/231">
+  <p>Dr. Manuela Petak</p>
+  <p>Saarbrücker Straße 66125</p>
+  <p>06897-71038</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/232">Dr. Martin Jockers</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/232">
+  <p>Dr. Martin Jockers</p>
+  <p>Saarbrücker Straße 66125</p>
+  <p>06897-77500</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/233">Gemeinschaftspraxis Dres. Koc/Marz/Stenger</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/233">
+  <p>Gemeinschaftspraxis Dres. Koc/Marz/Stenger</p>
+  <p>In den Rodhecken 66125</p>
+  <p>06897-9242025</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/234">Ralph Theres</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/234">
+  <p>Ralph Theres</p>
+  <p>Beethovenstraße 66125</p>
+  <p>06897-8405460</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/235">Werner Meier</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/235">
+  <p>Werner Meier</p>
+  <p>Saarbrücker Straße 66125</p>
+  <p>06897-761063</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/236">Dr. Markus Niedereichholz</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/236">
+  <p>Dr. Markus Niedereichholz</p>
+  <p>Saarbrücker Str. 66125</p>
+  <p>06897-75031</p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -267,29 +271,59 @@
 
         
                 
-                <p>
-                   <a href="location/328">Gangolf-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/328">
+  <p>Gangolf-Apotheke</p>
+  <p>Hauptstr. 66787</p>
+  <p>06834-60267</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/331">Dr. Hans Hermann Zipp</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/331">
+  <p>Dr. Hans Hermann Zipp</p>
+  <p>Kirchendell 66787</p>
+  <p>06834-61770</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/332">Dr. Sabine Schackmann</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/332">
+  <p>Dr. Sabine Schackmann</p>
+  <p>Kaiserstraße 66787</p>
+  <p>06834-41112</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/333">Till Woysch</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/333">
+  <p>Till Woysch</p>
+  <p>Lindenstraße 66787</p>
+  <p>06834-43011</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/334">Dr. Franca Gatto-Collura</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/334">
+  <p>Dr. Franca Gatto-Collura</p>
+  <p>Lindenstraße 66787</p>
+  <p>06834-41478</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/335">Dr. E. Bahnemann</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/335">
+  <p>Dr. E. Bahnemann</p>
+  <p>Lindenstraße 66787</p>
+  <p>06834-42688</p>
+</a>
+  ----
+
                 
         
 
@@ -333,9 +367,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

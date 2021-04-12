@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -235,9 +239,14 @@
 
         
                 
-                <p>
-                   <a href="location/117">Thomas Dehnen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/117">
+  <p>Thomas Dehnen</p>
+  <p>Am Gerstengarten 66693</p>
+  <p>06865-426</p>
+</a>
+  ----
+
                 
         
 
@@ -313,9 +322,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

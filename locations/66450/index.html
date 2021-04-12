@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -155,21 +159,41 @@
 
         
                 
-                <p>
-                   <a href="location/9">Ring-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/9">
+  <p>Ring-Apotheke</p>
+  <p>Bahnhofstr. 66450</p>
+  <p>8189731</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/10">Dr. Wolfram Benoist</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/10">
+  <p>Dr. Wolfram Benoist</p>
+  <p>Markwaldstraße 66450</p>
+  <p>06826-6589</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/11">Gemeinschaftspraxis Dres. Sebastian/Dorst-Sebastian</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/11">
+  <p>Gemeinschaftspraxis Dres. Sebastian/Dorst-Sebastian</p>
+  <p> 66450</p>
+  <p>06826-6470</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/12">Sabine Braun</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/12">
+  <p>Sabine Braun</p>
+  <p>Aloys-Nesseler-Platz 66450</p>
+  <p>06826-2525</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

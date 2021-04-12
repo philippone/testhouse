@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -183,33 +187,68 @@
 
         
                 
-                <p>
-                   <a href="location/29">St.Barbara-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/29">
+  <p>St.Barbara-Apotheke</p>
+  <p>Brühlstr. 66571</p>
+  <p>06806-988280</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/30">Marien-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/30">
+  <p>Marien-Apotheke</p>
+  <p>Kirchplatz 66571</p>
+  <p>06881-7128</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/31">Dr. Gabriele Andler</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/31">
+  <p>Dr. Gabriele Andler</p>
+  <p>Europaplatz 66571</p>
+  <p>06881-898258</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/32">Dr. Hans Martin Schmidt</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/32">
+  <p>Dr. Hans Martin Schmidt</p>
+  <p>Kirchplatz 66571</p>
+  <p>06881-87700</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/33">Katrin Bungert-Feldmann</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/33">
+  <p>Katrin Bungert-Feldmann</p>
+  <p>Zur alten Mühle 66571</p>
+  <p>06827-90160</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/34">Zahnarztpraxis Weimer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/34">
+  <p>Zahnarztpraxis Weimer</p>
+  <p>Kirchenstraße 66571</p>
+  <p>06806-81642</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/35">ZA. P. Weimer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/35">
+  <p>ZA. P. Weimer</p>
+  <p>Kirchenstraße 66571</p>
+  <p>06806-81642</p>
+</a>
+  ----
+
                 
         
 
@@ -337,9 +376,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

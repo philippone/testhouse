@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -75,13 +79,23 @@
 
         
                 
-                <p>
-                   <a href="location/176">Barbara-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/176">
+  <p>Barbara-Apotheke</p>
+  <p>Alleestr. 66126</p>
+  <p>06898-80055</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/237">Dr. Dorothee Gaul</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/237">
+  <p>Dr. Dorothee Gaul</p>
+  <p>Alleestraße 66126</p>
+  <p>06898-82088</p>
+</a>
+  ----
+
                 
         
 
@@ -317,9 +331,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

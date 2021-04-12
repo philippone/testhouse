@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -167,41 +171,86 @@
 
         
                 
-                <p>
-                   <a href="location/118">Doc&#39;s-Apotheke Neunkirchen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/118">
+  <p>Doc&#39;s-Apotheke Neunkirchen</p>
+  <p>Bahnhofstr. 66538</p>
+  <p>06821-9127339</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/120">Ali Dastbaz</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/120">
+  <p>Ali Dastbaz</p>
+  <p>Bliespromenade 66538</p>
+  <p>06821-12727</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/121">Christine Fabian</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/121">
+  <p>Christine Fabian</p>
+  <p>Wilhelmstraße 66538</p>
+  <p>06821-22321</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/122">Dr. Harald Seidler</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/122">
+  <p>Dr. Harald Seidler</p>
+  <p>Stummstraße 66538</p>
+  <p>06821-22020</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/123">Dr. Jörg Angresius</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/123">
+  <p>Dr. Jörg Angresius</p>
+  <p>Boxbergweg 66538</p>
+  <p>06821-9145680</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/124">Igor Fleer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/124">
+  <p>Igor Fleer</p>
+  <p>Brunnenstr. 66538</p>
+  <p>06821-88282</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/125">Gemeinschaftspraxis Dres. Klass/Mippi</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/125">
+  <p>Gemeinschaftspraxis Dres. Klass/Mippi</p>
+  <p>Bliespromenade 66538</p>
+  <p>06821-22030</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/126">Petra Ost-Becker</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/126">
+  <p>Petra Ost-Becker</p>
+  <p>Bliespromenade 66538</p>
+  <p>06821-13001</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/127">Gemeinschaftspraxis Johannes/Schmieden</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/127">
+  <p>Gemeinschaftspraxis Johannes/Schmieden</p>
+  <p>Wilhelmstraße 66538</p>
+  <p>06821-3629944</p>
+</a>
+  ----
+
                 
         
 
@@ -345,9 +394,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

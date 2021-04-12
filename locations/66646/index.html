@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -219,17 +223,32 @@
 
         
                 
-                <p>
-                   <a href="location/103">Dr. Michael Mörsdorf</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/103">
+  <p>Dr. Michael Mörsdorf</p>
+  <p>Tholeyer Straße 66646</p>
+  <p>06853-2078</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/104">Dr. Stephan Degro</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/104">
+  <p>Dr. Stephan Degro</p>
+  <p>Urexweilerstraße 66646</p>
+  <p>06853-922113</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/105">Gemeinschaftspraxis Ammann/Bungert</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/105">
+  <p>Gemeinschaftspraxis Ammann/Bungert</p>
+  <p>Im Brühl 66646</p>
+  <p>06827-90230</p>
+</a>
+  ----
+
                 
         
 
@@ -321,9 +340,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

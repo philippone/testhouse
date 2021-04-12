@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -207,29 +211,59 @@
 
         
                 
-                <p>
-                   <a href="location/129">Hubertus Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/129">
+  <p>Hubertus Apotheke</p>
+  <p>Saarbrücker Str. 66625</p>
+  <p>06852-6365</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/130">Dr. Marcus Schlich</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/130">
+  <p>Dr. Marcus Schlich</p>
+  <p>Buchwaldstraße 66625</p>
+  <p>06852-259</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/131">Gemeinschaftspraxis Dres. Bencsik/Bencsik</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/131">
+  <p>Gemeinschaftspraxis Dres. Bencsik/Bencsik</p>
+  <p>Am Burghof 66625</p>
+  <p>06852-92042</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/132">Gemeinschaftspraxis Frey/Frey</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/132">
+  <p>Gemeinschaftspraxis Frey/Frey</p>
+  <p>Hauptstraße 66625</p>
+  <p>06825-360</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/133">Dr. Bernhard Steines</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/133">
+  <p>Dr. Bernhard Steines</p>
+  <p>Saarbrücker Straße 66625</p>
+  <p>06852-92121</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/140">Bostalsee</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/140">
+  <p>Bostalsee</p>
+  <p> 66625</p>
+  <p></p>
+</a>
+  ----
+
                 
         
 
@@ -333,9 +367,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

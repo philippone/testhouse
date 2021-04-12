@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -243,21 +247,41 @@
 
         
                 
-                <p>
-                   <a href="location/147">Grenzland-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/147">
+  <p>Grenzland-Apotheke</p>
+  <p>Trierer Str. 66706</p>
+  <p>06867-91060</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/148">Römer-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/148">
+  <p>Römer-Apotheke</p>
+  <p>Martinusstr. 66706</p>
+  <p>06866-262</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/149">Dr. Thomas Röder</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/149">
+  <p>Dr. Thomas Röder</p>
+  <p>Kirschenstraße 66706</p>
+  <p>06867-254</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/150">Roland Woll</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/150">
+  <p>Roland Woll</p>
+  <p>Trierer Straße 66706</p>
+  <p>06867-302</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

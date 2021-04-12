@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -91,9 +95,14 @@
 
         
                 
-                <p>
-                   <a href="location/245">Dr. Klaus Bauer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/245">
+  <p>Dr. Klaus Bauer</p>
+  <p>Kreuzstraße 66132</p>
+  <p>0681-897414</p>
+</a>
+  ----
+
                 
         
 
@@ -313,9 +322,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -239,33 +243,68 @@
 
         
                 
-                <p>
-                   <a href="location/2">Engel-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/2">
+  <p>Engel-Apotheke</p>
+  <p>Talstr. 66701</p>
+  <p>06835-2435</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/3">Tal-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/3">
+  <p>Tal-Apotheke</p>
+  <p>Honzrather Str. 66701</p>
+  <p>06835-93351</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/4">Andreas-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/4">
+  <p>Andreas-Apotheke</p>
+  <p>Reimsbacher Str. 40- 66701</p>
+  <p>06832-91181</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/5">Dr. Isabell Kühnle-Adler</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/5">
+  <p>Dr. Isabell Kühnle-Adler</p>
+  <p>06832- 66701</p>
+  <p>06832-92060</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/6">Frank Donate</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/6">
+  <p>Frank Donate</p>
+  <p>06835- 66701</p>
+  <p>06835-92030</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/7">Josef Schmitt</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/7">
+  <p>Josef Schmitt</p>
+  <p>06835- 66701</p>
+  <p>06835-4063</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/8">Nathalie Flammang</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/8">
+  <p>Nathalie Flammang</p>
+  <p>06832- 66701</p>
+  <p>06832-800280</p>
+</a>
+  ----
+
                 
         
 
@@ -337,9 +376,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

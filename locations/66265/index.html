@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -99,45 +103,95 @@
 
         
                 
-                <p>
-                   <a href="location/49">Post-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/49">
+  <p>Post-Apotheke</p>
+  <p>Trierer Str. 66265</p>
+  <p>06806-5929</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/50">Dominik Folz</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/50">
+  <p>Dominik Folz</p>
+  <p>Auf Jungs Wies 66265</p>
+  <p>06806-79091</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/51">Dr. Lodz Maciej Kowalski</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/51">
+  <p>Dr. Lodz Maciej Kowalski</p>
+  <p>Am Hirtenbrunnen 66265</p>
+  <p>06806-6720</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/52">Dr. Manuela Jung</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/52">
+  <p>Dr. Manuela Jung</p>
+  <p>Friedrichstraße 66265</p>
+  <p>06806-91720</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/53">Gemeinschaftspraxis Dres. Bauer/Wagner</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/53">
+  <p>Gemeinschaftspraxis Dres. Bauer/Wagner</p>
+  <p>Trierer Straße 66265</p>
+  <p>06806-987700</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/54">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/54">
+  <p>Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</p>
+  <p> 66265</p>
+  <p>06806-98610</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/55">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/55">
+  <p>Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</p>
+  <p> 66265</p>
+  <p>06806-98610</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/56">Huu Dinh</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/56">
+  <p>Huu Dinh</p>
+  <p> 66265</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/57">Christof Kurz</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/57">
+  <p>Christof Kurz</p>
+  <p>06806- 66265</p>
+  <p>06806-7001</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/58">ZA. T. Schlicker</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/58">
+  <p>ZA. T. Schlicker</p>
+  <p>Holzer Platz 66265</p>
+  <p>06806-80880</p>
+</a>
+  ----
+
                 
         
 
@@ -349,9 +403,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

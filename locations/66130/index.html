@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -87,37 +91,77 @@
 
         
                 
-                <p>
-                   <a href="location/177">Apotheke im Globus</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/177">
+  <p>Apotheke im Globus</p>
+  <p>Wolfsau 66130</p>
+  <p>0681-874191</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/178">Einhorn-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/178">
+  <p>Einhorn-Apotheke</p>
+  <p>Saargemünder Str. 66130</p>
+  <p>0681-872157</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/179">Linden-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/179">
+  <p>Linden-Apotheke</p>
+  <p>Saarbrücker Str. 66130</p>
+  <p>0681-872587</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/242">Dr. Barbara Busse</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/242">
+  <p>Dr. Barbara Busse</p>
+  <p>Saarbrücker Straße 66130</p>
+  <p>0681-9883640</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/243">Gemeinschaftspraxis Dres. Schmidt/Tosounidis</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/243">
+  <p>Gemeinschaftspraxis Dres. Schmidt/Tosounidis</p>
+  <p>Saarbrücker Straße 66130</p>
+  <p>06805-21488</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/244">Stephan Getzlaff</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/244">
+  <p>Stephan Getzlaff</p>
+  <p>Spitalstraße 66130</p>
+  <p>0681-87156</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/247">Corona Testzentrum Güdingen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/247">
+  <p>Corona Testzentrum Güdingen</p>
+  <p>Saargemünderstr. 66130</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/248">Corona Testzentrum Brebach,  -</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/248">
+  <p>Corona Testzentrum Brebach,  -</p>
+  <p>Saarbrückerstr. 66130</p>
+  <p></p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

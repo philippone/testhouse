@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -79,17 +83,32 @@
 
         
                 
-                <p>
-                   <a href="location/238">Dr. Kerstin Mayer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/238">
+  <p>Dr. Kerstin Mayer</p>
+  <p>Hauptstraße 66127</p>
+  <p>06898-31008</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/239">Gemeinschaftspraxis Klein/Winkelspecht</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/239">
+  <p>Gemeinschaftspraxis Klein/Winkelspecht</p>
+  <p>Kreisstraße 66127</p>
+  <p>06898-93160</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/240">Ute Ulrich</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/240">
+  <p>Ute Ulrich</p>
+  <p>Kreisstraße 66127</p>
+  <p>06898-93160</p>
+</a>
+  ----
+
                 
         
 
@@ -321,9 +340,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

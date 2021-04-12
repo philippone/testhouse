@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -279,13 +283,23 @@
 
         
                 
-                <p>
-                   <a href="location/311">Dr. Joachim Schillen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/311">
+  <p>Dr. Joachim Schillen</p>
+  <p>Saarlouiser Straße 66802</p>
+  <p>06836-2771</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/312">Gemeinschaftspraxis Dres. Schmidt/Kosiol</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/312">
+  <p>Gemeinschaftspraxis Dres. Schmidt/Kosiol</p>
+  <p>Gluckstraße 66802</p>
+  <p>06836-2938</p>
+</a>
+  ----
+
                 
         
 
@@ -317,9 +331,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -55,21 +59,41 @@
 
         
                 
-                <p>
-                   <a href="location/170">Stengel-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/170">
+  <p>Stengel-Apotheke</p>
+  <p>Eisenbahnstr. 66117</p>
+  <p>0681-52363</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/213">Frank Born</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/213">
+  <p>Frank Born</p>
+  <p>Metzer Straße 66117</p>
+  <p>0681-583236</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/214">German Dreßen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/214">
+  <p>German Dreßen</p>
+  <p>Eisenbahnstraße 66117</p>
+  <p>0681-34544</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/217">Dr. F. Petry/C.Petry</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/217">
+  <p>Dr. F. Petry/C.Petry</p>
+  <p>Eisenbahnstraße 66117</p>
+  <p>0681-56126</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

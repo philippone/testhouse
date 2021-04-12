@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -139,37 +143,77 @@
 
         
                 
-                <p>
-                   <a href="location/278">Gambrinus-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/278">
+  <p>Gambrinus-Apotheke</p>
+  <p>Poststr. 66386</p>
+  <p>06894-3386</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/279">Ingobertus-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/279">
+  <p>Ingobertus-Apotheke</p>
+  <p>Poststr. 66386</p>
+  <p>06894-92680</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/280">Rohrbach-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/280">
+  <p>Rohrbach-Apotheke</p>
+  <p>Obere Kaiserstr. 66386</p>
+  <p>06894-52345</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/281">Johannis-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/281">
+  <p>Johannis-Apotheke</p>
+  <p>06894/ 66386</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/282">Dr. Dirk Bauer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/282">
+  <p>Dr. Dirk Bauer</p>
+  <p>Rickertstraße 66386</p>
+  <p>06894-310525</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/283">Frank Rausch</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/283">
+  <p>Frank Rausch</p>
+  <p>Finkenstraße 66386</p>
+  <p>06894-955713</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/284">Karsten Theiß</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/284">
+  <p>Karsten Theiß</p>
+  <p>Oststraße 66386</p>
+  <p>06894-2092</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/285">MVZ St. Ingbert Dennis Borces</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/285">
+  <p>MVZ St. Ingbert Dennis Borces</p>
+  <p>Kaiserstraße 66386</p>
+  <p>06894-36000</p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

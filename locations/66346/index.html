@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -127,37 +131,77 @@
 
         
                 
-                <p>
-                   <a href="location/151">Apotheke am Markt</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/151">
+  <p>Apotheke am Markt</p>
+  <p>Am Marktplatz 26- 66346</p>
+  <p>06898-694910</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/152">Dr. Peter Treitz</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/152">
+  <p>Dr. Peter Treitz</p>
+  <p>Am Marktplatz 26- 66346</p>
+  <p>06898-66233</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/153">Andreas Dutka</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/153">
+  <p>Andreas Dutka</p>
+  <p>Pickardstraße 66346</p>
+  <p>06898-689444</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/154">Dr. Andreas Pletat</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/154">
+  <p>Dr. Andreas Pletat</p>
+  <p>Marktstraße 66346</p>
+  <p>06898-63063</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/155">Dr. Nicole Weiten</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/155">
+  <p>Dr. Nicole Weiten</p>
+  <p>Hauptstraße 66346</p>
+  <p>06806-48393</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/156">Dr. Oliver Löb</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/156">
+  <p>Dr. Oliver Löb</p>
+  <p>Marktstraße 66346</p>
+  <p>06898-6043</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/157">Gerhard Becker</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/157">
+  <p>Gerhard Becker</p>
+  <p>Rathausplatz 66346</p>
+  <p>06898-66226</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/158">San.-Rat Dr. Eckart Rolshoven</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/158">
+  <p>San.-Rat Dr. Eckart Rolshoven</p>
+  <p>Ludwigstraße 66346</p>
+  <p>06898-96140</p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

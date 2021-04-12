@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -199,41 +203,86 @@
 
         
                 
-                <p>
-                   <a href="location/286">Bernhard Kohl</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/286">
+  <p>Bernhard Kohl</p>
+  <p>Wendalinusstraße 66606</p>
+  <p>06851-3011</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/287">Dr. Claudia Jobst</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/287">
+  <p>Dr. Claudia Jobst</p>
+  <p>Alter Woog 66606</p>
+  <p>06851-2583</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/288">Dr. Eduard Schmid</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/288">
+  <p>Dr. Eduard Schmid</p>
+  <p>St. Annenstraße 66606</p>
+  <p>06851-4174</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/289">Dr. Harald Thömmes</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/289">
+  <p>Dr. Harald Thömmes</p>
+  <p>Lebacher Straße 66606</p>
+  <p>06851-3053</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/290">Dr. Saskia Ost-Zeyer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/290">
+  <p>Dr. Saskia Ost-Zeyer</p>
+  <p>Wendalinusstraße 66606</p>
+  <p>06851-6665</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/291">Gemeinschaftspraxis Caspary/Burgheim</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/291">
+  <p>Gemeinschaftspraxis Caspary/Burgheim</p>
+  <p>Mommstraße 66606</p>
+  <p>06851-2815</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/292">Gemeinschaftspraxis Dres. Rauber/Kandels</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/292">
+  <p>Gemeinschaftspraxis Dres. Rauber/Kandels</p>
+  <p>St. Annenstraße 66606</p>
+  <p>06851-974900</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/293">Dr. D. + S. Hör</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/293">
+  <p>Dr. D. + S. Hör</p>
+  <p>Oberlinxweilerstraße 66606</p>
+  <p>06851-85491</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/294">Prof. Dr. Dr. P. Maurer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/294">
+  <p>Prof. Dr. Dr. P. Maurer</p>
+  <p>Wendalinusstraße 5- 66606</p>
+  <p>06851-9398450</p>
+</a>
+  ----
+
                 
         
 
@@ -345,9 +394,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

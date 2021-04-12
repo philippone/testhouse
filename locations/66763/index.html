@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -255,41 +259,86 @@
 
         
                 
-                <p>
-                   <a href="location/20">Berg- und Hütten-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/20">
+  <p>Berg- und Hütten-Apotheke</p>
+  <p>Stummstr. 66763</p>
+  <p>06831-707004</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/21">Odilien-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/21">
+  <p>Odilien-Apotheke</p>
+  <p>Odilienplatz 66763</p>
+  <p>06831-77000</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/22">Pachtener-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/22">
+  <p>Pachtener-Apotheke</p>
+  <p>06831/ 66763</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/23">Dr. Guido Ospelt</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/23">
+  <p>Dr. Guido Ospelt</p>
+  <p>Friedrich-Ebert-Straße 66763</p>
+  <p>06831-71138</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/24">Dr. Marcus Maier</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/24">
+  <p>Dr. Marcus Maier</p>
+  <p>Odilienplatz 66763</p>
+  <p>06831-489520</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/25">Dr. Matthias Heinze</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/25">
+  <p>Dr. Matthias Heinze</p>
+  <p>Stummstraße 66763</p>
+  <p>06831-78992</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/26">Dr. Moritz Schmitt</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/26">
+  <p>Dr. Moritz Schmitt</p>
+  <p>Dillinger Straße 66763</p>
+  <p>06831-949292</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/27">Gemeinschaftspraxis Frank/Frank</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/27">
+  <p>Gemeinschaftspraxis Frank/Frank</p>
+  <p>Odilienplatz 66763</p>
+  <p>06831-796937</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/28">Hans Jürgen Huber</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/28">
+  <p>Hans Jürgen Huber</p>
+  <p>Odilienplatz 66763</p>
+  <p>06831-71009</p>
+</a>
+  ----
+
                 
         
 
@@ -345,9 +394,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

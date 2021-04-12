@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -95,13 +99,23 @@
 
         
                 
-                <p>
-                   <a href="location/180">Markus-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/180">
+  <p>Markus-Apotheke</p>
+  <p>Kaiserstr. 66133</p>
+  <p>0681-980340</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/246">Gemeinschaftspraxis Veauthier/Veauthier</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/246">
+  <p>Gemeinschaftspraxis Veauthier/Veauthier</p>
+  <p>Kaiserstraße 66133</p>
+  <p>0681-811919</p>
+</a>
+  ----
+
                 
         
 
@@ -317,9 +331,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

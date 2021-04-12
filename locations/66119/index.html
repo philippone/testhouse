@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -59,17 +63,32 @@
 
         
                 
-                <p>
-                   <a href="location/171">Kramer&#39;sche Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/171">
+  <p>Kramer&#39;sche Apotheke</p>
+  <p>Saargemünder Str. 66119</p>
+  <p>0681-851159</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/215">Dr. Said Seidahmadi</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/215">
+  <p>Dr. Said Seidahmadi</p>
+  <p>Saargemünder Straße 66119</p>
+  <p>0681-852221</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/216">Gemeinschaftspraxis Dr. Jacobi/Jacobi</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/216">
+  <p>Gemeinschaftspraxis Dr. Jacobi/Jacobi</p>
+  <p>Saargemünder Straße 66119</p>
+  <p>0681-852466</p>
+</a>
+  ----
+
                 
         
 
@@ -321,9 +340,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

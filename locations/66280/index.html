@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -107,37 +111,77 @@
 
         
                 
-                <p>
-                   <a href="location/297">Salzbrunnen-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/297">
+  <p>Salzbrunnen-Apotheke</p>
+  <p>Sulzbachtalstr. 66280</p>
+  <p>06897-503456</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/298">Dr. Anja Fischer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/298">
+  <p>Dr. Anja Fischer</p>
+  <p>Grühlingstraße 66280</p>
+  <p>06897-52442</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/299">Dr. Petra Birtel</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/299">
+  <p>Dr. Petra Birtel</p>
+  <p>Eisenbahnschachtanlage 66280</p>
+  <p>06897-87330</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/300">Dr. Sigrid Uhlig</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/300">
+  <p>Dr. Sigrid Uhlig</p>
+  <p>Am Markt 66280</p>
+  <p>06897-2284</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/301">Dr. Lutz Kirbis</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/301">
+  <p>Dr. Lutz Kirbis</p>
+  <p>06897- 66280</p>
+  <p>06897-55363</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/302">Gemeinschaftspraxis Dres. Klemm/Frank</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/302">
+  <p>Gemeinschaftspraxis Dres. Klemm/Frank</p>
+  <p>Sulzbachtalstraße 66280</p>
+  <p>06897-2500</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/303">Orthozentrum Saar</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/303">
+  <p>Orthozentrum Saar</p>
+  <p>Sulzbachtalstraße 66280</p>
+  <p>06897-2964</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/304">Werner Ganz</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/304">
+  <p>Werner Ganz</p>
+  <p>Am Markt 66280</p>
+  <p>06897-4036</p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

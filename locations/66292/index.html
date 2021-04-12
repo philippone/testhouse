@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -115,21 +119,41 @@
 
         
                 
-                <p>
-                   <a href="location/164">Albrecht Kröber</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/164">
+  <p>Albrecht Kröber</p>
+  <p>Herchenbacher Straße 66292</p>
+  <p>06806-13610</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/165">Gemeinschaftspraxis Dr. Bellmann/Godel</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/165">
+  <p>Gemeinschaftspraxis Dr. Bellmann/Godel</p>
+  <p> 66292</p>
+  <p>06806-920288</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/166">Gemeinschaftspraxis Messerle/ Dr. Schweizer</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/166">
+  <p>Gemeinschaftspraxis Messerle/ Dr. Schweizer</p>
+  <p>Marienstraße 66292</p>
+  <p>06806-994880</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/167">Gemeinschaftspraxis Dr. Messerle/ Kreckmann</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/167">
+  <p>Gemeinschaftspraxis Dr. Messerle/ Kreckmann</p>
+  <p>Marienstraße 66292</p>
+  <p>06806-9948820</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -295,65 +299,140 @@
 
         
                 
-                <p>
-                   <a href="location/38">Festhalle</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/38">
+  <p>Festhalle</p>
+  <p> </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/106">Turnhalle Grundschule</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/106">
+  <p>Turnhalle Grundschule</p>
+  <p> </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/128">Der Neunkircher Testbus</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/128">
+  <p>Der Neunkircher Testbus</p>
+  <p> </p>
+  <p>06821-20</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/134">Köhlerhalle Walhausen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/134">
+  <p>Köhlerhalle Walhausen</p>
+  <p> </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/139">Bürgerhaus</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/139">
+  <p>Bürgerhaus</p>
+  <p> </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/142">Dorfgemeinschaftshaus</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/142">
+  <p>Dorfgemeinschaftshaus</p>
+  <p> </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/259">Gemeinschaftspraxis Dr. Djoudi/Salm</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/259">
+  <p>Gemeinschaftspraxis Dr. Djoudi/Salm</p>
+  <p>Lothringer Straße 3- </p>
+  <p>06831-1270006</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/295">Testzentrum Bosenbach</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/295">
+  <p>Testzentrum Bosenbach</p>
+  <p> </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/296">Schnelltestzentrum in der Parkstraße 9 in St. Wendel</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/296">
+  <p>Schnelltestzentrum in der Parkstraße 9 in St. Wendel</p>
+  <p>mittwochs 15 bis </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/306">Montag:</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/306">
+  <p>Montag:</p>
+  <p>Zum Vogelsang </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/307">Dienstag:</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/307">
+  <p>Dienstag:</p>
+  <p> </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/308">Mittwoch:</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/308">
+  <p>Mittwoch:</p>
+  <p>Keltenweg </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/309">Donnerstag:</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/309">
+  <p>Donnerstag:</p>
+  <p>Theeltalstraße </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/310">Freitag:</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/310">
+  <p>Freitag:</p>
+  <p>Im Matzenecken </p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/330">Dr. Franca Gatto-Collura, 06834-41478, Lindenstraße 75, 66787 Wadgassen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/330">
+  <p>Dr. Franca Gatto-Collura, 06834-41478, Lindenstraße 75, 66787 Wadgassen</p>
+  <p> </p>
+  <p></p>
+</a>
+  ----
+
                 
         
 
@@ -369,9 +448,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

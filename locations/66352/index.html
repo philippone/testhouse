@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -131,17 +135,32 @@
 
         
                 
-                <p>
-                   <a href="location/46">Rossel-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/46">
+  <p>Rossel-Apotheke</p>
+  <p>Ludweilerstr. 66352</p>
+  <p>06898-41338</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/47">Dr. Magdolna Nemcsik</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/47">
+  <p>Dr. Magdolna Nemcsik</p>
+  <p>Ludweilerstraße 3- 66352</p>
+  <p>06898-41053</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/48">Lidia Barth</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/48">
+  <p>Lidia Barth</p>
+  <p>Im Sommerflur 66352</p>
+  <p>06898-94180</p>
+</a>
+  ----
+
                 
         
 
@@ -321,9 +340,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

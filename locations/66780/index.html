@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -263,17 +267,32 @@
 
         
                 
-                <p>
-                   <a href="location/161">Saartal-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/161">
+  <p>Saartal-Apotheke</p>
+  <p>Poststr. 66780</p>
+  <p>06835-3642</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/162">St. Martin-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/162">
+  <p>St. Martin-Apotheke</p>
+  <p>Zur Niedtalhalle 66780</p>
+  <p>06835-93633</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/163">Gemeinschaftspraxis Dres. Wenzl-Bauer/Wenzl</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/163">
+  <p>Gemeinschaftspraxis Dres. Wenzl-Bauer/Wenzl</p>
+  <p>Bahnhofstraße 66780</p>
+  <p>06835-60730</p>
+</a>
+  ----
+
                 
         
 
@@ -321,9 +340,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -163,21 +167,41 @@
 
         
                 
-                <p>
-                   <a href="location/80">Dr. Gudula Zimper</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/80">
+  <p>Dr. Gudula Zimper</p>
+  <p>Lappentascher Straße 66459</p>
+  <p>06841-8274</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/81">Dr. Martina Teja</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/81">
+  <p>Dr. Martina Teja</p>
+  <p>Ludwigsthaler Straße 66459</p>
+  <p>06841-81575</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/82">Gemeinschaftspraxis Dr. Nicklaus/Kirch</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/82">
+  <p>Gemeinschaftspraxis Dr. Nicklaus/Kirch</p>
+  <p>Wielandstraße 66459</p>
+  <p>06849-484</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/83">Hermann Forster</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/83">
+  <p>Hermann Forster</p>
+  <p>Goethestraße 66459</p>
+  <p>06849-515</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

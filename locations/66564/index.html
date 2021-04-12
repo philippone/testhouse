@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -179,21 +183,41 @@
 
         
                 
-                <p>
-                   <a href="location/143">Schloss-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/143">
+  <p>Schloss-Apotheke</p>
+  <p> 66564</p>
+  <p></p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/144">Dr. Judith Simonett</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/144">
+  <p>Dr. Judith Simonett</p>
+  <p>Im Herrengarten 66564</p>
+  <p>06824-93020</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/145">Martina Hoffmann-Kümmel</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/145">
+  <p>Martina Hoffmann-Kümmel</p>
+  <p>Anton-Hansen-Straße 66564</p>
+  <p>06824-2330</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/146">Roswitha Weber</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/146">
+  <p>Roswitha Weber</p>
+  <p>Wilhelm-Heinrich-Straße 66564</p>
+  <p>06824-302783</p>
+</a>
+  ----
+
                 
         
 
@@ -325,9 +349,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

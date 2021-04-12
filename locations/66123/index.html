@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -67,25 +71,50 @@
 
         
                 
-                <p>
-                   <a href="location/174">Römer-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/174">
+  <p>Römer-Apotheke</p>
+  <p>Am Kieselhumes 66123</p>
+  <p>0681-62417</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/175">Rotenbühl-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/175">
+  <p>Rotenbühl-Apotheke</p>
+  <p>Kaiserslauterer Str. 66123</p>
+  <p>0681-34090</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/226">Gemeinschaftspraxis Dres. Klein/Reinert</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/226">
+  <p>Gemeinschaftspraxis Dres. Klein/Reinert</p>
+  <p>Scheidter Straße 66123</p>
+  <p>0681-34944</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/227">Tatjana Kotro</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/227">
+  <p>Tatjana Kotro</p>
+  <p>Im Sauerbrod 66123</p>
+  <p>0681-31638</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/228">Ursula Danner-Baltes</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/228">
+  <p>Ursula Danner-Baltes</p>
+  <p>Heidenkopferdell 66123</p>
+  <p>0681-6850800</p>
+</a>
+  ----
+
                 
         
 
@@ -329,9 +358,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

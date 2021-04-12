@@ -40,6 +40,10 @@
 
 
 
+    
+
+
+
 
         
 
@@ -227,37 +231,77 @@
 
         
                 
-                <p>
-                   <a href="location/109">Apotheke im Gesundheitscampus</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/109">
+  <p>Apotheke im Gesundheitscampus</p>
+  <p>Trierer Str. 215- 66663</p>
+  <p>06861-9391890</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/110">Fellenberg-Apotheke</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/110">
+  <p>Fellenberg-Apotheke</p>
+  <p>Torstr. 66663</p>
+  <p>06861-793232</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/111">Dr. Georg Radosa</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/111">
+  <p>Dr. Georg Radosa</p>
+  <p>Brauerstraße 66663</p>
+  <p>06861-2159</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/112">Gemeinschaftspraxis Dres. Rettig-Ewen/Küppers/Leinen</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/112">
+  <p>Gemeinschaftspraxis Dres. Rettig-Ewen/Küppers/Leinen</p>
+  <p> 66663</p>
+  <p>06861-992902</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/113">Gemeinschaftspraxis Giersberg/Loris</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/113">
+  <p>Gemeinschaftspraxis Giersberg/Loris</p>
+  <p>Hausbacher Straße 66663</p>
+  <p>06861-2345</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/114">Jörg Rübsteck</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/114">
+  <p>Jörg Rübsteck</p>
+  <p>Poststraße 66663</p>
+  <p>06861-5777</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/115">MVZ Merzig</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/115">
+  <p>MVZ Merzig</p>
+  <p>Bahnhofstraße 66663</p>
+  <p>06861-2614</p>
+</a>
+  ----
+
                 
-                <p>
-                   <a href="location/116">Silvia Heinrich-Seger</a>
-                 </p>
+                        
+<a class="location-list-item" href="location/116">
+  <p>Silvia Heinrich-Seger</p>
+  <p>Poststraße 66663</p>
+  <p>06861-3936</p>
+</a>
+  ----
+
                 
         
 
@@ -341,9 +385,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 
