@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="66125" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+                
+                <p>
+                   <a href="location/229">Anne Meier-Heinrich</a>
+                 </p>
+                
+                <p>
+                   <a href="location/230">Bernd Allmannsberger</a>
+                 </p>
+                
+                <p>
+                   <a href="location/231">Dr. Manuela Petak</a>
+                 </p>
+                
+                <p>
+                   <a href="location/232">Dr. Martin Jockers</a>
+                 </p>
+                
+                <p>
+                   <a href="location/233">Gemeinschaftspraxis Dres. Koc/Marz/Stenger</a>
+                 </p>
+                
+                <p>
+                   <a href="location/234">Ralph Theres</a>
+                 </p>
+                
+                <p>
+                   <a href="location/235">Werner Meier</a>
+                 </p>
+                
+                <p>
+                   <a href="location/236">Dr. Markus Niedereichholz</a>
+                 </p>
+                
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

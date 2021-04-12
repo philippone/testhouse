@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/202">Dres. Hahn/Weber/Hahn Ferreira</a>
+    </p>
+
+    <p>
+        <a href="location/203">Dr. P. Klein</a>
+    </p>
+
+    <p>
+        <a href="location/204">BAG Anna-Böttcher/Böttcher</a>
+    </p>
+
+    <p>
+        <a href="location/205">Dr. Annette Geiger-Klein</a>
+    </p>
+
+    <p>
+        <a href="location/206">Dr. Dirk Pilger</a>
+    </p>
+
+    <p>
+        <a href="location/207">Dr. Thomas Kirch</a>
+    </p>
+
+    <p>
+        <a href="location/208">Gemeinschaftspraxis Dr. Zimmer/Schimke</a>
+    </p>
+
+    <p>
+        <a href="location/209">Wannenmacher/Fuchs</a>
+    </p>
+
+    <p>
+        <a href="location/210">Gemeinschaftspraxis Dres. Korpys/Plitt-Wehnert/Loytved</a>
+    </p>
+
+    <p>
+        <a href="location/211">Olga Piatezki</a>
+    </p>
+
+    <p>
+        <a href="location/212">Saeb Awad</a>
+    </p>
+
+    <p>
+        <a href="location/213">Frank Born</a>
+    </p>
+
+    <p>
+        <a href="location/214">German Dreßen</a>
+    </p>
+
+    <p>
+        <a href="location/215">Dr. Said Seidahmadi</a>
+    </p>
+
+    <p>
+        <a href="location/216">Gemeinschaftspraxis Dr. Jacobi/Jacobi</a>
+    </p>
+
+    <p>
+        <a href="location/217">Dr. F. Petry/C.Petry</a>
+    </p>
+
+    <p>
+        <a href="location/218">Christian Lahr</a>
+    </p>
+
+    <p>
+        <a href="location/219">Dr. Julia Lohmann</a>
+    </p>
+
+    <p>
+        <a href="location/220">Dr. Liane Berndt</a>
+    </p>
+
+    <p>
+        <a href="location/221">Dr. Martin Neu</a>
+    </p>
+
+    <p>
+        <a href="location/222">Karl-Josef Pirrung</a>
+    </p>
+
+    <p>
+        <a href="location/223">Markus Breitenbach</a>
+    </p>
+
+    <p>
+        <a href="location/224">Peter Sulger</a>
+    </p>
+
+    <p>
+        <a href="location/225">Thomas Johannes</a>
+    </p>
+
+    <p>
+        <a href="location/226">Gemeinschaftspraxis Dres. Klein/Reinert</a>
+    </p>
+
+
+<a href=/locations/page-7/index.html><</a>
+<a href=/locations/page-9/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

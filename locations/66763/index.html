@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="66763" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+                
+                <p>
+                   <a href="location/20">Berg- und Hütten-Apotheke</a>
+                 </p>
+                
+                <p>
+                   <a href="location/21">Odilien-Apotheke</a>
+                 </p>
+                
+                <p>
+                   <a href="location/22">Pachtener-Apotheke</a>
+                 </p>
+                
+                <p>
+                   <a href="location/23">Dr. Guido Ospelt</a>
+                 </p>
+                
+                <p>
+                   <a href="location/24">Dr. Marcus Maier</a>
+                 </p>
+                
+                <p>
+                   <a href="location/25">Dr. Matthias Heinze</a>
+                 </p>
+                
+                <p>
+                   <a href="location/26">Dr. Moritz Schmitt</a>
+                 </p>
+                
+                <p>
+                   <a href="location/27">Gemeinschaftspraxis Frank/Frank</a>
+                 </p>
+                
+                <p>
+                   <a href="location/28">Hans Jürgen Huber</a>
+                 </p>
+                
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

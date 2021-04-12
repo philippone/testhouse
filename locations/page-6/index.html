@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/152">Dr. Peter Treitz</a>
+    </p>
+
+    <p>
+        <a href="location/153">Andreas Dutka</a>
+    </p>
+
+    <p>
+        <a href="location/154">Dr. Andreas Pletat</a>
+    </p>
+
+    <p>
+        <a href="location/155">Dr. Nicole Weiten</a>
+    </p>
+
+    <p>
+        <a href="location/156">Dr. Oliver Löb</a>
+    </p>
+
+    <p>
+        <a href="location/157">Gerhard Becker</a>
+    </p>
+
+    <p>
+        <a href="location/158">San.-Rat Dr. Eckart Rolshoven</a>
+    </p>
+
+    <p>
+        <a href="location/159">Dr. Werner Reichert</a>
+    </p>
+
+    <p>
+        <a href="location/160">Gemeinschaftspraxis Dr. Günder/Schneider</a>
+    </p>
+
+    <p>
+        <a href="location/161">Saartal-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/162">St. Martin-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/163">Gemeinschaftspraxis Dres. Wenzl-Bauer/Wenzl</a>
+    </p>
+
+    <p>
+        <a href="location/164">Albrecht Kröber</a>
+    </p>
+
+    <p>
+        <a href="location/165">Gemeinschaftspraxis Dr. Bellmann/Godel</a>
+    </p>
+
+    <p>
+        <a href="location/166">Gemeinschaftspraxis Messerle/ Dr. Schweizer</a>
+    </p>
+
+    <p>
+        <a href="location/167">Gemeinschaftspraxis Dr. Messerle/ Kreckmann</a>
+    </p>
+
+    <p>
+        <a href="location/168">Viktoria-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/169">Apotheke im Medizeum</a>
+    </p>
+
+    <p>
+        <a href="location/170">Stengel-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/171">Kramer&#39;sche Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/172">Apotheke am Geisberg</a>
+    </p>
+
+    <p>
+        <a href="location/173">Apotheke am Zoo</a>
+    </p>
+
+    <p>
+        <a href="location/174">Römer-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/175">Rotenbühl-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/176">Barbara-Apotheke</a>
+    </p>
+
+
+<a href=/locations/page-5/index.html><</a>
+<a href=/locations/page-7/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="undefined" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+                
+                <p>
+                   <a href="location/38">Festhalle</a>
+                 </p>
+                
+                <p>
+                   <a href="location/106">Turnhalle Grundschule</a>
+                 </p>
+                
+                <p>
+                   <a href="location/128">Der Neunkircher Testbus</a>
+                 </p>
+                
+                <p>
+                   <a href="location/134">Köhlerhalle Walhausen</a>
+                 </p>
+                
+                <p>
+                   <a href="location/139">Bürgerhaus</a>
+                 </p>
+                
+                <p>
+                   <a href="location/142">Dorfgemeinschaftshaus</a>
+                 </p>
+                
+                <p>
+                   <a href="location/259">Gemeinschaftspraxis Dr. Djoudi/Salm</a>
+                 </p>
+                
+                <p>
+                   <a href="location/295">Testzentrum Bosenbach</a>
+                 </p>
+                
+                <p>
+                   <a href="location/296">Schnelltestzentrum in der Parkstraße 9 in St. Wendel</a>
+                 </p>
+                
+                <p>
+                   <a href="location/306">Montag:</a>
+                 </p>
+                
+                <p>
+                   <a href="location/307">Dienstag:</a>
+                 </p>
+                
+                <p>
+                   <a href="location/308">Mittwoch:</a>
+                 </p>
+                
+                <p>
+                   <a href="location/309">Donnerstag:</a>
+                 </p>
+                
+                <p>
+                   <a href="location/310">Freitag:</a>
+                 </p>
+                
+                <p>
+                   <a href="location/330">Dr. Franca Gatto-Collura, 06834-41478, Lindenstraße 75, 66787 Wadgassen</a>
+                 </p>
+                
+        
+
+
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

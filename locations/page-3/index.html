@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/77">Alexander Indermark</a>
+    </p>
+
+    <p>
+        <a href="location/78">Dr. Anke Kissinger-Fischer</a>
+    </p>
+
+    <p>
+        <a href="location/79">Zahnarztpraxis am Dreiherreneck</a>
+    </p>
+
+    <p>
+        <a href="location/80">Dr. Gudula Zimper</a>
+    </p>
+
+    <p>
+        <a href="location/81">Dr. Martina Teja</a>
+    </p>
+
+    <p>
+        <a href="location/82">Gemeinschaftspraxis Dr. Nicklaus/Kirch</a>
+    </p>
+
+    <p>
+        <a href="location/83">Hermann Forster</a>
+    </p>
+
+    <p>
+        <a href="location/84">Dr. Gudrun Fürst</a>
+    </p>
+
+    <p>
+        <a href="location/85">Gemeinschaftspraxis Dr. Heid/ Schneider</a>
+    </p>
+
+    <p>
+        <a href="location/86">John Warmann</a>
+    </p>
+
+    <p>
+        <a href="location/87">Dr. H. Hönel</a>
+    </p>
+
+    <p>
+        <a href="location/88">DocMorris-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/89">Schützen-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/90">Bernhard Altmeyer</a>
+    </p>
+
+    <p>
+        <a href="location/91">Bernhard Schumacher</a>
+    </p>
+
+    <p>
+        <a href="location/92">Gemeinschaftspraxis Dr. Hertrich/Konietzke</a>
+    </p>
+
+    <p>
+        <a href="location/93">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>
+    </p>
+
+    <p>
+        <a href="location/94">Gemeinschaftspraxis Eisenbrand/Eisenbrand</a>
+    </p>
+
+    <p>
+        <a href="location/95">Waldemar Stern</a>
+    </p>
+
+    <p>
+        <a href="location/96">Mauritius-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/97">Mandelbach-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/98">Dr. Sibylle Zänger</a>
+    </p>
+
+    <p>
+        <a href="location/99">Schnellteststation im Saal Niederländer</a>
+    </p>
+
+    <p>
+        <a href="location/100">Schnellteststation im Rathaus</a>
+    </p>
+
+    <p>
+        <a href="location/101">Schnellteststation im Foyer der Bliestalhalle</a>
+    </p>
+
+
+<a href=/locations/page-2/index.html><</a>
+<a href=/locations/page-4/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

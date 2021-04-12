@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/52">Dr. Manuela Jung</a>
+    </p>
+
+    <p>
+        <a href="location/53">Gemeinschaftspraxis Dres. Bauer/Wagner</a>
+    </p>
+
+    <p>
+        <a href="location/54">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>
+    </p>
+
+    <p>
+        <a href="location/55">Gemeinschaftspraxis Dres. Fuchs/Michalski/Adapoe-Doamekpor</a>
+    </p>
+
+    <p>
+        <a href="location/56">Huu Dinh</a>
+    </p>
+
+    <p>
+        <a href="location/57">Christof Kurz</a>
+    </p>
+
+    <p>
+        <a href="location/58">ZA. T. Schlicker</a>
+    </p>
+
+    <p>
+        <a href="location/59">Apotheke am Enklerplatz</a>
+    </p>
+
+    <p>
+        <a href="location/60">Bahnhof-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/61">Schloss-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/62">Apotheke am Erbach</a>
+    </p>
+
+    <p>
+        <a href="location/63">Anette Hilpert</a>
+    </p>
+
+    <p>
+        <a href="location/64">Arno Winter</a>
+    </p>
+
+    <p>
+        <a href="location/65">Dr. Antje Hammers-Reinhard</a>
+    </p>
+
+    <p>
+        <a href="location/66">Dr. Hans Jakob Schöndorf</a>
+    </p>
+
+    <p>
+        <a href="location/67">Farzaneh Ardestani</a>
+    </p>
+
+    <p>
+        <a href="location/68">Gemeinschaftspraxis Dres. Reichert/Wahlen/Stierkorb/Holtsmark</a>
+    </p>
+
+    <p>
+        <a href="location/69">Gemeinschaftspraxis Schmidt/Schuld</a>
+    </p>
+
+    <p>
+        <a href="location/70">Gemeinschaftspraxis Schmidt/Schuld</a>
+    </p>
+
+    <p>
+        <a href="location/71">Hasan Ramadan</a>
+    </p>
+
+    <p>
+        <a href="location/72">Bären-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/73">St. Stephanus-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/74">Barbara-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/75">Husaren-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/76">Gemeinschaftspraxis Hoppstädter/ André</a>
+    </p>
+
+
+<a href=/locations/page-1/index.html><</a>
+<a href=/locations/page-3/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

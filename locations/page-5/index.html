@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/127">Gemeinschaftspraxis Johannes/Schmieden</a>
+    </p>
+
+    <p>
+        <a href="location/128">Der Neunkircher Testbus</a>
+    </p>
+
+    <p>
+        <a href="location/129">Hubertus Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/130">Dr. Marcus Schlich</a>
+    </p>
+
+    <p>
+        <a href="location/131">Gemeinschaftspraxis Dres. Bencsik/Bencsik</a>
+    </p>
+
+    <p>
+        <a href="location/132">Gemeinschaftspraxis Frey/Frey</a>
+    </p>
+
+    <p>
+        <a href="location/133">Dr. Bernhard Steines</a>
+    </p>
+
+    <p>
+        <a href="location/134">Köhlerhalle Walhausen</a>
+    </p>
+
+    <p>
+        <a href="location/135">Hochwald-Apotheke, 06873-240</a>
+    </p>
+
+    <p>
+        <a href="location/136">Primstal-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/137">Gemeinschaftspraxis Dres. Offermann/Schneider</a>
+    </p>
+
+    <p>
+        <a href="location/138">ZA. M. Rupp</a>
+    </p>
+
+    <p>
+        <a href="location/139">Bürgerhaus</a>
+    </p>
+
+    <p>
+        <a href="location/140">Bostalsee</a>
+    </p>
+
+    <p>
+        <a href="location/141">Gemeinschaftspraxis Dres. Rauber/Kandels</a>
+    </p>
+
+    <p>
+        <a href="location/142">Dorfgemeinschaftshaus</a>
+    </p>
+
+    <p>
+        <a href="location/143">Schloss-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/144">Dr. Judith Simonett</a>
+    </p>
+
+    <p>
+        <a href="location/145">Martina Hoffmann-Kümmel</a>
+    </p>
+
+    <p>
+        <a href="location/146">Roswitha Weber</a>
+    </p>
+
+    <p>
+        <a href="location/147">Grenzland-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/148">Römer-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/149">Dr. Thomas Röder</a>
+    </p>
+
+    <p>
+        <a href="location/150">Roland Woll</a>
+    </p>
+
+    <p>
+        <a href="location/151">Apotheke am Markt</a>
+    </p>
+
+
+<a href=/locations/page-4/index.html><</a>
+<a href=/locations/page-6/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

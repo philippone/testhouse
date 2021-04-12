@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/102">Schnellteststation im Dorfgemeinschaftshaus Bebelsheim</a>
+    </p>
+
+    <p>
+        <a href="location/103">Dr. Michael Mörsdorf</a>
+    </p>
+
+    <p>
+        <a href="location/104">Dr. Stephan Degro</a>
+    </p>
+
+    <p>
+        <a href="location/105">Gemeinschaftspraxis Ammann/Bungert</a>
+    </p>
+
+    <p>
+        <a href="location/106">Turnhalle Grundschule</a>
+    </p>
+
+    <p>
+        <a href="location/107">Löwen-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/108">ZA. T. Decker</a>
+    </p>
+
+    <p>
+        <a href="location/109">Apotheke im Gesundheitscampus</a>
+    </p>
+
+    <p>
+        <a href="location/110">Fellenberg-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/111">Dr. Georg Radosa</a>
+    </p>
+
+    <p>
+        <a href="location/112">Gemeinschaftspraxis Dres. Rettig-Ewen/Küppers/Leinen</a>
+    </p>
+
+    <p>
+        <a href="location/113">Gemeinschaftspraxis Giersberg/Loris</a>
+    </p>
+
+    <p>
+        <a href="location/114">Jörg Rübsteck</a>
+    </p>
+
+    <p>
+        <a href="location/115">MVZ Merzig</a>
+    </p>
+
+    <p>
+        <a href="location/116">Silvia Heinrich-Seger</a>
+    </p>
+
+    <p>
+        <a href="location/117">Thomas Dehnen</a>
+    </p>
+
+    <p>
+        <a href="location/118">Doc&#39;s-Apotheke Neunkirchen</a>
+    </p>
+
+    <p>
+        <a href="location/119">Kepler-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/120">Ali Dastbaz</a>
+    </p>
+
+    <p>
+        <a href="location/121">Christine Fabian</a>
+    </p>
+
+    <p>
+        <a href="location/122">Dr. Harald Seidler</a>
+    </p>
+
+    <p>
+        <a href="location/123">Dr. Jörg Angresius</a>
+    </p>
+
+    <p>
+        <a href="location/124">Igor Fleer</a>
+    </p>
+
+    <p>
+        <a href="location/125">Gemeinschaftspraxis Dres. Klass/Mippi</a>
+    </p>
+
+    <p>
+        <a href="location/126">Petra Ost-Becker</a>
+    </p>
+
+
+<a href=/locations/page-3/index.html><</a>
+<a href=/locations/page-5/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

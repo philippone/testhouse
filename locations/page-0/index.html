@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/2">Engel-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/3">Tal-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/4">Andreas-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/5">Dr. Isabell Kühnle-Adler</a>
+    </p>
+
+    <p>
+        <a href="location/6">Frank Donate</a>
+    </p>
+
+    <p>
+        <a href="location/7">Josef Schmitt</a>
+    </p>
+
+    <p>
+        <a href="location/8">Nathalie Flammang</a>
+    </p>
+
+    <p>
+        <a href="location/9">Ring-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/10">Dr. Wolfram Benoist</a>
+    </p>
+
+    <p>
+        <a href="location/11">Gemeinschaftspraxis Dres. Sebastian/Dorst-Sebastian</a>
+    </p>
+
+    <p>
+        <a href="location/12">Sabine Braun</a>
+    </p>
+
+    <p>
+        <a href="location/13">Barbara-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/14">Rats-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/15">Schlossberg-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/16">Christina Baumann</a>
+    </p>
+
+    <p>
+        <a href="location/17">Dr. Raban Baumann</a>
+    </p>
+
+    <p>
+        <a href="location/18">Dr. Tom Ring</a>
+    </p>
+
+    <p>
+        <a href="location/19">Dr. Martin Thielen</a>
+    </p>
+
+    <p>
+        <a href="location/20">Berg- und Hütten-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/21">Odilien-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/22">Pachtener-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/23">Dr. Guido Ospelt</a>
+    </p>
+
+    <p>
+        <a href="location/24">Dr. Marcus Maier</a>
+    </p>
+
+    <p>
+        <a href="location/25">Dr. Matthias Heinze</a>
+    </p>
+
+    <p>
+        <a href="location/26">Dr. Moritz Schmitt</a>
+    </p>
+
+
+<a href=><</a>
+<a href=/locations/page-1/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

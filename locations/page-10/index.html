@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/252">Glückauf-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/253">Dr. Holger Groß</a>
+    </p>
+
+    <p>
+        <a href="location/254">Dr. Jan Berner</a>
+    </p>
+
+    <p>
+        <a href="location/255">Dr. med. Maria Liszka</a>
+    </p>
+
+    <p>
+        <a href="location/256">Dr. Peter Szymanski</a>
+    </p>
+
+    <p>
+        <a href="location/257">Dr. Thomas Nauhauser</a>
+    </p>
+
+    <p>
+        <a href="location/258">Dres. Link/Steffen/Philipps/Bitsch</a>
+    </p>
+
+    <p>
+        <a href="location/259">Gemeinschaftspraxis Dr. Djoudi/Salm</a>
+    </p>
+
+    <p>
+        <a href="location/260">Gemeinschaftspraxis Dres. Breyer/Molter-Carbini</a>
+    </p>
+
+    <p>
+        <a href="location/261">Herbert Hanisch</a>
+    </p>
+
+    <p>
+        <a href="location/262">MVZ-Saar Dr. Ihmann</a>
+    </p>
+
+    <p>
+        <a href="location/263">Dr. Benedict Schmitt</a>
+    </p>
+
+    <p>
+        <a href="location/264">Dr. A. Blaes-Salz</a>
+    </p>
+
+    <p>
+        <a href="location/265">Husaren-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/266">Dres. Ney/Porzsolt</a>
+    </p>
+
+    <p>
+        <a href="location/267">Gemeinschaftspraxis Adolph/Mißler</a>
+    </p>
+
+    <p>
+        <a href="location/268">Gemeinschaftspraxis Dr. Borkowski/Borkowski</a>
+    </p>
+
+    <p>
+        <a href="location/269">Thomas Mann-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/270">Ali Tadjrischi</a>
+    </p>
+
+    <p>
+        <a href="location/271">Gemeinschaftspraxis Ammann/Bungert (Hr. Troitzsch)</a>
+    </p>
+
+    <p>
+        <a href="location/272">Gemeinschaftspraxis Dres. Omlor/Omlor</a>
+    </p>
+
+    <p>
+        <a href="location/273">Limbacher-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/274">Dr. Stefan Groß</a>
+    </p>
+
+    <p>
+        <a href="location/275">Dr. Klaus Umlauf</a>
+    </p>
+
+    <p>
+        <a href="location/276">Dr. Silke Hauck</a>
+    </p>
+
+
+<a href=/locations/page-9/index.html><</a>
+<a href=/locations/page-11/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

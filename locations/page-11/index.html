@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/277">Ibrahim Othman</a>
+    </p>
+
+    <p>
+        <a href="location/278">Gambrinus-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/279">Ingobertus-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/280">Rohrbach-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/281">Johannis-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/282">Dr. Dirk Bauer</a>
+    </p>
+
+    <p>
+        <a href="location/283">Frank Rausch</a>
+    </p>
+
+    <p>
+        <a href="location/284">Karsten Theiß</a>
+    </p>
+
+    <p>
+        <a href="location/285">MVZ St. Ingbert Dennis Borces</a>
+    </p>
+
+    <p>
+        <a href="location/286">Bernhard Kohl</a>
+    </p>
+
+    <p>
+        <a href="location/287">Dr. Claudia Jobst</a>
+    </p>
+
+    <p>
+        <a href="location/288">Dr. Eduard Schmid</a>
+    </p>
+
+    <p>
+        <a href="location/289">Dr. Harald Thömmes</a>
+    </p>
+
+    <p>
+        <a href="location/290">Dr. Saskia Ost-Zeyer</a>
+    </p>
+
+    <p>
+        <a href="location/291">Gemeinschaftspraxis Caspary/Burgheim</a>
+    </p>
+
+    <p>
+        <a href="location/292">Gemeinschaftspraxis Dres. Rauber/Kandels</a>
+    </p>
+
+    <p>
+        <a href="location/293">Dr. D. + S. Hör</a>
+    </p>
+
+    <p>
+        <a href="location/294">Prof. Dr. Dr. P. Maurer</a>
+    </p>
+
+    <p>
+        <a href="location/295">Testzentrum Bosenbach</a>
+    </p>
+
+    <p>
+        <a href="location/296">Schnelltestzentrum in der Parkstraße 9 in St. Wendel</a>
+    </p>
+
+    <p>
+        <a href="location/297">Salzbrunnen-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/298">Dr. Anja Fischer</a>
+    </p>
+
+    <p>
+        <a href="location/299">Dr. Petra Birtel</a>
+    </p>
+
+    <p>
+        <a href="location/300">Dr. Sigrid Uhlig</a>
+    </p>
+
+    <p>
+        <a href="location/301">Dr. Lutz Kirbis</a>
+    </p>
+
+
+<a href=/locations/page-10/index.html><</a>
+<a href=/locations/page-12/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

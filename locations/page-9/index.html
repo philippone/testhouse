@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="Currently available test locations.">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+    <p>
+        <a href="location/227">Tatjana Kotro</a>
+    </p>
+
+    <p>
+        <a href="location/228">Ursula Danner-Baltes</a>
+    </p>
+
+    <p>
+        <a href="location/229">Anne Meier-Heinrich</a>
+    </p>
+
+    <p>
+        <a href="location/230">Bernd Allmannsberger</a>
+    </p>
+
+    <p>
+        <a href="location/231">Dr. Manuela Petak</a>
+    </p>
+
+    <p>
+        <a href="location/232">Dr. Martin Jockers</a>
+    </p>
+
+    <p>
+        <a href="location/233">Gemeinschaftspraxis Dres. Koc/Marz/Stenger</a>
+    </p>
+
+    <p>
+        <a href="location/234">Ralph Theres</a>
+    </p>
+
+    <p>
+        <a href="location/235">Werner Meier</a>
+    </p>
+
+    <p>
+        <a href="location/236">Dr. Markus Niedereichholz</a>
+    </p>
+
+    <p>
+        <a href="location/237">Dr. Dorothee Gaul</a>
+    </p>
+
+    <p>
+        <a href="location/238">Dr. Kerstin Mayer</a>
+    </p>
+
+    <p>
+        <a href="location/239">Gemeinschaftspraxis Klein/Winkelspecht</a>
+    </p>
+
+    <p>
+        <a href="location/240">Ute Ulrich</a>
+    </p>
+
+    <p>
+        <a href="location/241">Dr. Christof Weber</a>
+    </p>
+
+    <p>
+        <a href="location/242">Dr. Barbara Busse</a>
+    </p>
+
+    <p>
+        <a href="location/243">Gemeinschaftspraxis Dres. Schmidt/Tosounidis</a>
+    </p>
+
+    <p>
+        <a href="location/244">Stephan Getzlaff</a>
+    </p>
+
+    <p>
+        <a href="location/245">Dr. Klaus Bauer</a>
+    </p>
+
+    <p>
+        <a href="location/246">Gemeinschaftspraxis Veauthier/Veauthier</a>
+    </p>
+
+    <p>
+        <a href="location/247">Corona Testzentrum Güdingen</a>
+    </p>
+
+    <p>
+        <a href="location/248">Corona Testzentrum Brebach,  -</a>
+    </p>
+
+    <p>
+        <a href="location/249">Apotheke im Globus</a>
+    </p>
+
+    <p>
+        <a href="location/250">Römer-Apotheke</a>
+    </p>
+
+    <p>
+        <a href="location/251">Apollonia Apotheke</a>
+    </p>
+
+
+<a href=/locations/page-8/index.html><</a>
+<a href=/locations/page-10/index.html>></a>
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>

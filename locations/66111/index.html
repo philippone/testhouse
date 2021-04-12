@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <base href="/testhouse/"></base>
+        <meta name="description" content="">
+<!--        <link rel="stylesheet" href="/css/main.css" />-->
+    </head>
+    <body>
+
+<header>
+
+    header
+
+    <nav>
+        nav
+    </nav>
+
+</header>
+
+<main>
+
+
+
+
+
+<h1></h1>
+
+<form  onsubmit="onSubmit(event)">
+
+    <label>
+    Suche:
+    <input name="postal"  value="66111" placeholder="PLZ" type="text"
+           pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
+    </label>
+    <button type="submit" id="submitBtn">Suchen</button>
+</form>
+
+
+
+
+        
+                
+                <p>
+                   <a href="location/168">Viktoria-Apotheke</a>
+                 </p>
+                
+                <p>
+                   <a href="location/181">Claudia Scharl</a>
+                 </p>
+                
+                <p>
+                   <a href="location/182">Dr. Anne Benn Lembert</a>
+                 </p>
+                
+                <p>
+                   <a href="location/183">Dr. Agathe Krahl</a>
+                 </p>
+                
+                <p>
+                   <a href="location/184">Dr. Diana Csikai</a>
+                 </p>
+                
+                <p>
+                   <a href="location/185">Dr. Gökmen Gül</a>
+                 </p>
+                
+                <p>
+                   <a href="location/186">Dr. Jo Brauer</a>
+                 </p>
+                
+                <p>
+                   <a href="location/187">Dr. Katrin Bachelier</a>
+                 </p>
+                
+                <p>
+                   <a href="location/188">Dr. Najib Müller-Bütow</a>
+                 </p>
+                
+                <p>
+                   <a href="location/189">Dr. Petra Karst</a>
+                 </p>
+                
+                <p>
+                   <a href="location/190">Dr. Thomas Dapper</a>
+                 </p>
+                
+                <p>
+                   <a href="location/191">Dr. Vera Endres</a>
+                 </p>
+                
+                <p>
+                   <a href="location/192">Gemeinschaftspraxis Dr. Dietrich/Dietrich</a>
+                 </p>
+                
+                <p>
+                   <a href="location/193">Gemeinschaftspraxis Dres. Kuppig/Duchow/Drescher/Steimer</a>
+                 </p>
+                
+                <p>
+                   <a href="location/194">Gemeinschaftspraxis Gospodinov/Projsner</a>
+                 </p>
+                
+                <p>
+                   <a href="location/195">Horst Philippi</a>
+                 </p>
+                
+                <p>
+                   <a href="location/196">Karoline Jager</a>
+                 </p>
+                
+                <p>
+                   <a href="location/197">Rainer Hoffmann</a>
+                 </p>
+                
+                <p>
+                   <a href="location/198">Wolfgang Wahlster</a>
+                 </p>
+                
+                <p>
+                   <a href="location/199">Dr. Papageorgiou Agisilaos</a>
+                 </p>
+                
+                <p>
+                   <a href="location/200">Dr. M. Di Lorenzo</a>
+                 </p>
+                
+                <p>
+                   <a href="location/201">Dr. T. Geßner</a>
+                 </p>
+                
+                <p>
+                   <a href="location/202">Dres. Hahn/Weber/Hahn Ferreira</a>
+                 </p>
+                
+                <p>
+                   <a href="location/203">Dr. P. Klein</a>
+                 </p>
+                
+                <p>
+                   <a href="location/204">BAG Anna-Böttcher/Böttcher</a>
+                 </p>
+                
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+
+
+<script>
+
+const onSubmit = (event) => {
+    event.preventDefault(); 
+
+    const postal = event.target.postal.value;
+    if (postal) {
+        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+    } else {
+        window.location.replace(location.origin + '/locations/page-0');
+    }
+}
+
+</script>
+
+
+</main>
+
+
+<footer>
+footer
+</footer>
+
+
+
+
+</body></html>
