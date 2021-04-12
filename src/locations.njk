@@ -6,12 +6,14 @@ pagination:
 permalink: "locations/page-{{ pagination.pageNumber }}/"
 description: Currently available test locations.
 layout: layouts/locations.njk
+eleventyNavigation:
+  key: locations-overview
 ---
 
+{% import 'macros/location-list-item.njk' as lli %}
+
 {%for l in locations %}
-    <p>
-        <a href="{{ 'location/' + l.uuid }}">{{l.name}}</a>
-    </p>
+    {{ lli.locationListItem(l) }}
 {%endfor %}
 
 <a href={{pagination.previous}}><</a>

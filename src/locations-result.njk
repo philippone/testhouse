@@ -5,15 +5,20 @@ pagination:
     size: 1
 permalink: "/locations/{{ locationPostal | slug }}/"
 layout: layouts/locations.njk
+eleventyNavigation:
+  key: locations-overview-postal
+  parent: locations-overview
 ---
+
+{% import 'macros/location-list-item.njk' as lli %}
+    
+
 
 {% for postal, location in locationByPostal %}
 
         {% if locationPostal == postal %}
                 {%for l in location %}
-                <p>
-                   <a href="{{ 'location/' + l.uuid }}">{{l.name}}</a>
-                 </p>
+                        {{ lli.locationListItem(l) }}
                 {% endfor %}
         {% endif %}
 

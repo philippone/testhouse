@@ -29,9 +29,9 @@ const onSubmit = (event) => {
 
     const postal = event.target.postal.value;
     if (postal) {
-        window.location.replace(location.origin + '/locations/' + event.target.postal.value);
+        window.location.replace(document.baseURI + '/locations/' + event.target.postal.value);
     } else {
-        window.location.replace(location.origin + '/locations/page-0');
+        window.location.replace(document.baseURI + '/locations/page-0');
     }
 }
 

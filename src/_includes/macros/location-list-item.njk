@@ -1,0 +1,8 @@
+{% macro locationListItem(location) %}
+<a class="location-list-item" href="{{ 'location/' + location.uuid }}">
+  <p>{{location.name}}</p>
+  <p>{{location.street}} {{location.postal}}</p>
+  <p>{{location.tel}}</p>
+</a>
+  ----
+{% endmacro %}

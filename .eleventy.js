@@ -1,5 +1,9 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
+
 // 11ty configuration
 module.exports = config => {
+    config.addPlugin(eleventyNavigationPlugin);
 
     return {
         dir: {
