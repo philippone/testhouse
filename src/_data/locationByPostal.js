@@ -12,6 +12,7 @@ for(const location of locations) {
 
 }
 
+
 module.exports = locationsByPostal;
 //
 // module.exports = [

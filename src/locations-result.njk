@@ -1,0 +1,20 @@
+---
+pagination:
+    data: locationByPostal
+    alias: locationPostal
+    size: 1
+permalink: "/locations/{{ locationPostal | slug }}/"
+layout: layouts/locations.njk
+---
+
+{% for postal, location in locationByPostal %}
+
+        {% if locationPostal == postal %}
+                {%for l in location %}
+                <p>
+                   <a href="{{ 'location/' + l.uuid }}">{{l.name}}</a>
+                 </p>
+                {% endfor %}
+        {% endif %}
+
+{% endfor %}

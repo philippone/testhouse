@@ -7,36 +7,29 @@ templateClass: tmpl-locations
 
 <h1>{{ title }}</h1>
 
-{{ content | safe }}
 <div x-data="form()">
 
-<form  x-on:submit="onSearch($event)">
+<form  x-on:submit="console.log('test');$event.preventDefault(); window.location.replace(location.origin + '/locations/' + $event.target.postal.value);">
 
     <label>
     Postal:
-    <input required="true" name="postal" x-model="postal" placeholder="66117" type="text"
+    <input required="true" name="postal"  value="{{locationPostal}}" placeholder="66117" type="text"
            pattern="^(?!01000|99999)(0[1-9]\d{3}|[1-9]\d{4})$" title="Postleitzahl aus 5 Ziffern"/>
     </label>
     <button type="submit" id="submitBtn">Search</button>
 </form>
 
+{{ content | safe }}
 
-<!--<ul>-->
-<!--{%- for location in locations -%}-->
-<!--<li>-->
-<!--    <a href="/location/{{ location.name | slug }}">{{ location.name }}</a>-->
-<!--</li>-->
-<!--{%- endfor -%}-->
-<!--</ul>-->
 
-<ul class="location-list">
+{# <ul class="location-list">
     <template x-for="item in locations" :key="item">
         <li>
             <a x-bind:href="'location/' + item.uuid" x-text="item.name"></a>
         </li>
 </template>
 </ul>
-</div>
+</div> #}
 {% endblock %}
 
 

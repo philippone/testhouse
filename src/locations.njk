@@ -1,0 +1,13 @@
+---
+description: Currently available test locations.
+layout: layouts/locations.njk
+---
+
+test
+
+{%for l in locations %}
+    <p>
+        <a href="{{ 'location/' + l.uuid }}">{{l.name}}</a>
+    </p>
+
+{%endfor %}
