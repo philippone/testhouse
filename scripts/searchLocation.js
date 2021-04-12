@@ -2622,16 +2622,38 @@
     ];
 
     function form() {
-        return {
-            postal: 66119,
-            locations: __spreadArray([], locations),
+        var o = {
+            postal: new URL(window.location.href).searchParams.get('search') || '',
             onSearch: function (event) {
-                event.preventDefault();
-                // @ts-ignore
-                var postal = event.target.postal.value;
-                this.locations = locations.filter(function (location) { return location.postal === postal; });
+                var _this = this;
+                if (event) {
+                    event.preventDefault();
+                }
+                console.log('onSearch');
+                if (!this.postal || this.postal === '') {
+                    this.locations = __spreadArray([], locations);
+                    if (window.history.pushState) {
+                        var url = new URL(window.location.href);
+                        // set search property to blank
+                        url.search = '';
+                        window.history.pushState({ path: url.toString() }, '', url.toString());
+                    }
+                }
+                else {
+                    this.locations = locations.filter(function (location) { return location.postal === _this.postal; });
+                    if (window.history.pushState) {
+                        var url = new URL(window.location.href);
+                        url.searchParams.set('search', this.postal);
+                        window.history.pushState({ path: url.toString() }, '', url.toString());
+                    }
+                }
+                return this.locations;
             },
+            locations: __spreadArray([], locations)
         };
+        // @ts-ignore
+        o.locations = o.onSearch(null);
+        return o;
     }
     // @ts-ignore
     window.form = form;
